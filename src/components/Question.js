@@ -1,16 +1,18 @@
 import AnswerButtons from "./AnswerButtons";
+import './Question.css';
 
 const Question = (props) => {
     return(
         <div className='question' id={props.id}>
-            <h3>GCSE Assessment</h3>
-            <h3>Topic: {JSON.stringify(props.question.topic)}</h3>
-            <h3>Level: {JSON.stringify(props.question.level)}</h3>
+            <h2>GCSE Assessment</h2>
+            <h3>Question: {props.id + 1} - {JSON.stringify(props.question.topic)} - Level: {JSON.stringify(props.question.level)} </h3>
             {/* <h3>Answer: {JSON.stringify(props.question.answer)}</h3> */}
-            <a href={props.question.resource}>click here for extra questions!</a>
-            <img src= {"data:image/png;base64," + props.question.questionImage}  alt="Questions" /> 
+            {/* <a href={props.question.resource}>click here for extra questions!</a> */}
+            <div className='questionImage'>
+                <img src= {"data:image/png;base64," + props.question.question_image}  alt="Questions" /> 
+            </div>
 
-            <AnswerButtons nextQuestion={props.nextQuestion} />
+            <AnswerButtons id={props.id} nextQuestion={props.nextQuestion} />
 
         </div>
     )

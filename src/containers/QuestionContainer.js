@@ -26,7 +26,6 @@ class QuestionContainer extends React.Component {
     render(){
         return(
             <div>
-                <h3>This is the question container</h3>
                 <QuestionList questions={this.state.questions} number={this.state.questionNum} nextQuestion = {this.nextQuestion}/>
             </div>
         )
