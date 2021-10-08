@@ -1,0 +1,24 @@
+img {
+    max-width: auto;
+    height: 80%;
+}
+
+.question {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #D5DFE5;
+}
+.questionImage {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em; 
+    border-radius: 25%;
+    width: 90vh;
+    height: 40vh;
+    margin: 1em;
+    background-color: white;
+}

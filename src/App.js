@@ -1,12 +1,17 @@
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
 import UserContainer from './containers/UserContainer';
 import QuestionContainer from './containers/QuestionContainer';
 
 function App() {
   return (
     <div className="App">
-      {/* <UserContainer /> */}
-      <QuestionContainer />
+      <Switch>
+      {/* <Route exact path="/" component={Home} /> */}
+        <Route path="/questions" component={QuestionContainer} />
+        <Route component={Error} />
+              {/* <QuestionContainer /> */}
+      </Switch>
     </div>
   );
 }

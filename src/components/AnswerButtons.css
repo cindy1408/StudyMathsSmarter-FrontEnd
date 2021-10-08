@@ -1,5 +1,8 @@
 button {
-    width: 20em; 
-    height: 8em; 
-    background-color: pink;
+    width: 80px; 
+    height: 50px; 
+    background-color: #c9b1bd;
+    border-radius: 25%;
+    margin: 1em;
+    font-size: 30px;
 }
