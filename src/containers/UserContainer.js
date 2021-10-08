@@ -11,7 +11,7 @@ class UserContainer extends React.Component {
     }
     componentDidMount(){
         fetch("http://localhost:8080/study_maths_smarter/user")
-        .then(response => response.json())
+        .then((response) => response.json())
         .then(data => this.setState({users: data, loaded: true}))
         .catch(error => console.log(error))
     }
@@ -23,5 +23,4 @@ class UserContainer extends React.Component {
         )
     }
 }
-
 export default UserContainer;
