@@ -6,8 +6,10 @@ class QuestionContainer extends React.Component {
         super(props);
         this.state = {
             loaded: false, 
-            questions: []
+            questions: [], 
+            questionNum: 0
         }
+        this.nextQuestion = this.nextQuestion.bind(this);
     }
     componentDidMount() {
         fetch("http://localhost:8080/study_maths_smarter/question")
@@ -16,11 +18,16 @@ class QuestionContainer extends React.Component {
         .catch(error => console.log(error))
     }
 
+    nextQuestion(){
+        let i = this.state.questionNum; 
+        this.setState({questionNum: i+1})
+    }
+
     render(){
         return(
             <div>
-                <QuestionList questions={this.state.questions} />
                 <h3>This is the question container</h3>
+                <QuestionList questions={this.state.questions} number={this.state.questionNum} nextQuestion = {this.nextQuestion}/>
             </div>
         )
     }
