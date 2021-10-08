@@ -1,3 +1,5 @@
+import './AnswerButtons.css';
+
 const AnswerButtons = (props) => {
     return(
         <div>
