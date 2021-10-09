@@ -1,6 +1,7 @@
 img {
     max-width: auto;
     height: 80%;
+    border: solid 2px black;
 }
 
 .question {
@@ -19,6 +20,5 @@ img {
     border-radius: 25%;
     width: 90vh;
     height: 40vh;
-    margin: 1em;
     background-color: white;
 }
