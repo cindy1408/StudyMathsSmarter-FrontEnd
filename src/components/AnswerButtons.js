@@ -1,13 +1,16 @@
 import './AnswerButtons.css';
+import { useDispatch } from 'react-redux';
+import { nextQuestion } from '../redux/questionSlice';
 
 const AnswerButtons = (props) => {
+    const dispatch = useDispatch();
 
     function postUserResponse(){
         if(props.id == 9){
             <button>Submit</button>
             // history.push(`/submit`)
         }
-        props.nextQuestion()
+        dispatch(nextQuestion())
     }
 
     return(

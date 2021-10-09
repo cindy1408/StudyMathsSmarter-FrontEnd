@@ -6,8 +6,7 @@ class QuestionContainer extends React.Component {
         super(props);
         this.state = {
             loaded: false, 
-            questions: [], 
-            questionNum: 0
+            questions: [],
         }
         this.nextQuestion = this.nextQuestion.bind(this);
     }
@@ -26,7 +25,7 @@ class QuestionContainer extends React.Component {
     render(){
         return(
             <div>
-                <QuestionList questions={this.state.questions} number={this.state.questionNum} nextQuestion = {this.nextQuestion}/>
+                <QuestionList questions={this.state.questions} />
             </div>
         )
     }

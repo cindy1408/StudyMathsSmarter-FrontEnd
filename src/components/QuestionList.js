@@ -1,15 +1,18 @@
 import Question from './Question';
+import {useSelector} from "react-redux"
+
 
 const QuestionList = (props) => {
+    let questionNum = useSelector(state => state.questions.questionNum);
     let questionList = [];
     for(let i = 0; i < props.questions.length; i++){
         let eachQuestion = props.questions[i];
-        let questionComponent = <Question id={i} question={eachQuestion} questNum = {props.number} nextQuestion={props.nextQuestion} />
+        let questionComponent = <Question id={i} question={eachQuestion}  />
         questionList.push(questionComponent); 
     }
     return(
         <div>
-            {questionList[props.number]}
+            {questionList[questionNum]}
         </div>
     )
 }
