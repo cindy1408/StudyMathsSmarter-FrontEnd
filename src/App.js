@@ -11,7 +11,6 @@ function App() {
       <Route exact path="/" component={Home} />
         <Route path="/questions" component={QuestionContainer} />
         <Route component={Error} />
-              {/* <QuestionContainer /> */}
       </Switch>
     </div>
   );
