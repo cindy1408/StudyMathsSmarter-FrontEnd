@@ -17,18 +17,12 @@ function NavBar() {
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
+      <Link className="nav-link" to="/gcse">
       <li class="nav-item active">
-        <a class="nav-link" href="./pages/gcse.js"> GCSE </a>
+         GCSE
       </li>
-         <li class="nav-item">
-        <a class="nav-link" href="#">IGCSE</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">AS-Level</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">A-Levels</a>
-      </li>
+      </Link>
+        
       </ul>
       
       <span class="navbar-text">
