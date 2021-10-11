@@ -1,24 +1,78 @@
 import './AnswerButtons.css';
 import { useDispatch } from 'react-redux';
 import { nextQuestion } from '../redux/questionSlice';
+import { useSelector } from 'react-redux';
+import { addG1Score, addG2Score, addG3Score, addS1Score, addS2Score, addS3Score,addT1Score, addT2Score, addT3Score } from '../redux/updateQuizSlice';
 
-const AnswerButtons = (props) => {
+const AnswerButtons = () => {
     const dispatch = useDispatch();
+    let questionNum = useSelector(state => state.questions.questionNum);
 
-    function postUserResponse(){
-        if(props.id == 9){
+    function postUserResponse(value){
+        switch(questionNum){
+            case 0: 
+            if(value == "a"){
+                dispatch(addG1Score());
+            }
+            dispatch(nextQuestion())
+            break;
+            case 1:
+            if(value == "a"){
+                dispatch(addG2Score());
+            } 
+            dispatch(nextQuestion())
+            break;
+            case 2: 
+            if(value == "d"){
+                dispatch(addG3Score());
+            }
+            dispatch(nextQuestion())
+            break;
+            case 3: 
+            if(value == "b"){
+                dispatch(addS1Score());
+            }
+            dispatch(nextQuestion())
+            break;
+            case 4: 
+            if(value == "c"){
+                dispatch(addS2Score());
+            }
+            dispatch(nextQuestion())
+            break;
+            case 5: 
+            if(value == "a"){
+                dispatch(addS3Score());
+            }
+            dispatch(nextQuestion())
+            break;
+            case 6: 
+            if(value == "d"){
+                dispatch(addT1Score());
+            }
+            dispatch(nextQuestion())
+            break;
+            case 7: 
+            if(value == "b"){
+                dispatch(addT2Score());
+            }
+            dispatch(nextQuestion())
+            break;
+            case 8: 
+            if(value == "c"){
+                dispatch(addT3Score());
+            }
             <button>Submit</button>
-            // history.push(`/submit`)
+            break;
         }
-        dispatch(nextQuestion())
     }
 
     return(
         <div>
-            <button onClick={()=> postUserResponse()}>A</button>
-            <button onClick={()=> postUserResponse()}>B</button>
-            <button onClick={()=> postUserResponse()}>C</button>
-            <button onClick={()=> postUserResponse()}>D</button>
+            <button value={"a"} onClick={()=> postUserResponse("a")}>A</button>
+            <button value={"b"} onClick={()=> postUserResponse("b")}>B</button>
+            <button value={"c"} onClick={()=> postUserResponse("c")}>C</button>
+            <button value={"d"} onClick={()=> postUserResponse("d")}>D</button>
         </div>
     )
 }
