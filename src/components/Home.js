@@ -9,12 +9,9 @@ export default function Home(props) {
     const dispatch = useDispatch();
     
     function handleClick(){
-        //dispatch send Quiz info 
         dispatch(startQuiz());
         dispatch(addTimeStamp());
-
         history.push('/questions')
-        //dispatch(get quizID)
     }
     return (
         <button onClick={() => handleClick()}>Start Assessment!</button>

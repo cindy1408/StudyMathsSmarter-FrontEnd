@@ -11,7 +11,6 @@ export const updateQuizResult = createAsyncThunk(
         console.log(response)
     }
 )
-
 export const updateQuizSlice = createSlice({
     name: 'quizResult', 
     initialState: {
