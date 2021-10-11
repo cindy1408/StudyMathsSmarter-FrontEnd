@@ -2,20 +2,23 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 //Grabs the last quiz id (use for updating quiz score AND incase user wants to sign up)
 export const getQuizSlice = createAsyncThunk(
-    'getQuizId', 
+    'quiz/getQuizId', 
     async () => {
-        const response = await fetch("http://localhost:8080/study_maths_smarter/quiz");
-        if(response.ok){
-            const data = await response.json();
-            const quizId = data[data.length - 1].id;
-            return {quizId}
-        }
+        return fetch("http://localhost:8080/study_maths_smarter/quiz")
+        .then((response) => response.json())
+        .then((data) => data[data.length - 1].id)
+        
+        // if(response.ok){
+        //     const data = await response.json();
+        //     const quizId = data[data.length - 1].id;
+        //     return {quizId};
+        // }
     }
-)
+);
 
 //Post an empty quiz when user clicks start in order to be able to update
 export const startQuiz = createAsyncThunk(
-    'startQuiz', 
+    'quiz/startQuiz', 
     async () => {
         const quizResult = {
             question_g1_score: null, 
@@ -41,12 +44,15 @@ export const startQuiz = createAsyncThunk(
 export const getQuizIdSlice = createSlice({
     name: 'startQuiz', 
     initialState: [], 
+    reducers: {
+
+    },
     extraReducers: {
         [getQuizSlice.fulfilled]: (state, action) => {
             return action.payload.quizId;
         }, 
-        [startQuiz.fulfilled]: (state, action) => {
-            console.log(state);
+        [startQuiz.fulfilled]: (state, {payload}) => {
+            return payload;
         }
     }
 })
