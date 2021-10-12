@@ -21,33 +21,33 @@ function NavBar() {
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ">
     <Link className="nav-link" to="/homePage">
-      <li class="nav-item active addPadding">
+      <li class="fontNav nav-item active addPadding">
          HOME
       </li>
       </Link>
       <Link className="nav-link" to="/gcse">
-      <li class="nav-item active addPadding">
+      <li class="fontNav nav-item active addPadding">
          GCSE
       </li>
       </Link>
       <Link className="nav-link" to="/igcse">
-      <li class="nav-item active">
+      <li class="fontNav nav-item active">
          IGCSE
       </li>
       </Link>
       <Link className="nav-link" to="/asLevel">
-      <li class="nav-item active">
+      <li class="fontNav nav-item active">
          AS-LEVEL
       </li>
       </Link>
       <Link className="nav-link" to="/aLevel">
-      <li class="nav-item active">
+      <li class="fontNav nav-item active">
          A-LEVEL
       </li>
       </Link>        
       </ul>
       
-      <span class="navbar-text">
+      <span class="fontNav navbar-text">
       Login/Sign Up
     </span>
     
