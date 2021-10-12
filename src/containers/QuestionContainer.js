@@ -1,6 +1,5 @@
 import React from 'react';
 import QuestionList from '../components/QuestionList';
-
 class QuestionContainer extends React.Component {
     constructor(props){
         super(props);
@@ -23,6 +22,7 @@ class QuestionContainer extends React.Component {
     }
 
     render(){
+
         return(
             <div>
                 <QuestionList questions={this.state.questions} />

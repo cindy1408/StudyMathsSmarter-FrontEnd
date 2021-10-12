@@ -5,10 +5,11 @@ import { nextQuestion } from '../redux/questionSlice';
 import { useSelector } from 'react-redux';
 import { addG1Score, addG2Score, addG3Score, addS1Score, addS2Score, addS3Score,addT1Score, addT2Score, addT3Score } from '../redux/updateQuizSlice';
 
-const AnswerButtons = () => {
+const AnswerButtons = (props) => {
     const dispatch = useDispatch();
     const history = useHistory();
     let questionNum = useSelector(state => state.questions.questionNum);
+
 
     function postUserResponse(value){
         switch(questionNum){

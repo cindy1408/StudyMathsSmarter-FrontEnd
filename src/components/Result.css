@@ -1,0 +1,13 @@
+.strengthAndWeakness {
+    display: flex; 
+    flex-direction: row; 
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+}
+
+.strength {
+    margin: 3px;
+    border: solid black 3px;
+    padding: 4em;
+}

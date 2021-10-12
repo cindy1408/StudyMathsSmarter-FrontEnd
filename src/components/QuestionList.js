@@ -8,7 +8,7 @@ const QuestionList = (props) => {
     
     for(let i = 0; i < props.questions.length; i++){
         let eachQuestion = props.questions[i];
-        let questionComponent = <Question id={i} question={eachQuestion}  />
+        let questionComponent = <Question id={i} question={eachQuestion} resource={props.resource} />
         questionList.push(questionComponent); 
     }
     return(

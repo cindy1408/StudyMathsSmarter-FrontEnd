@@ -2,8 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const questionSlice = createSlice({
     name: 'questions',
-    initialState: 
-        { questionNum: 0 }, 
+    initialState: { 
+            questionNum: 0 }, 
 
     reducers: {
         nextQuestion: (state, action) => {

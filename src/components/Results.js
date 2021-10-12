@@ -1,7 +1,9 @@
 import React from 'react';
 import {useSelector} from "react-redux";
+import './Result.css';
+import Weakness from './Weakness';
 
-export default function Results(){
+export default function Results(props){
     let result = useSelector(state => state.quizResult.result);
     let percentage = Math.round((result/9)*100);
     let g1 = useSelector(state => state.quizResult.question_g1_score);
@@ -21,13 +23,25 @@ export default function Results(){
     let strength = []; 
 
     if(geometeryScore == 3){
-        strength.push(" Geometery ")
+        strength.push("Geometery")
     }
     if(solvingEquationScore == 3){
-        strength.push(" Solving Equation ")
+        strength.push("Solving Equation")
     }
     if(trigonometryScore == 3){
-        strength.push(" Trigonometry ")
+        strength.push("Trigonometry")
+    }
+
+    let weakness = [];
+
+    if(geometeryScore <= 2){
+        weakness.push("Geometery")
+    }
+    if(solvingEquationScore <= 2){
+        weakness.push("Solving Equation")
+    }
+    if(trigonometryScore <= 2){
+        weakness.push("Trigonometry")
     }
 
     return(
@@ -35,10 +49,14 @@ export default function Results(){
             <h3>Thank you for taking our quiz</h3>
             <h3>Your result is: {result} out of 9</h3>
             <h3>Percentage: {percentage} % </h3>
-            <h3>Strength: {strength.join()} </h3>
-            <h3>Topics to improve on: </h3>
-
-            
+            <div className='strengthAndWeakness'>
+                <div className='strength'>
+                <h3>Strength: {strength.join()} </h3>
+                </div>
+                <div className='weakness'>
+                    <Weakness topics={weakness} />
+                </div> 
+            </div>          
         </div>
     )
 }
