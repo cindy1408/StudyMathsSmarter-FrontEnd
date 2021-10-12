@@ -1,6 +1,8 @@
 .navbar {
   background: rgb(255, 236, 209);
   height: 150px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .logo {
@@ -13,6 +15,9 @@
 .navbar-nav > li {
   padding-left: 40px;
   padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-text {
