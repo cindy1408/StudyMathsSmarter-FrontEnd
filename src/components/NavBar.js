@@ -16,13 +16,27 @@ function NavBar() {
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ">
       <Link className="nav-link" to="/gcse">
-      <li class="nav-item active">
+      <li class="nav-item active addPadding">
          GCSE
       </li>
       </Link>
-        
+      <Link className="nav-link" to="/igcse">
+      <li class="nav-item active addPadding">
+         IGCSE
+      </li>
+      </Link>
+      <Link className="nav-link" to="/asLevel">
+      <li class="nav-item active addPadding">
+         AS-LEVEL
+      </li>
+      </Link>
+      <Link className="nav-link" to="/aLevel">
+      <li class="nav-item active addPadding">
+         A-LEVEL
+      </li>
+      </Link>
       </ul>
       
       <span class="navbar-text">
