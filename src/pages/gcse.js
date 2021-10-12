@@ -4,6 +4,7 @@ import {BannerGcse} from "../components/cards.js"
 
 
 function gcse(){
+<<<<<<< HEAD
     return (
         <BannerGcse title="This is the GCSE page" subText="Yes still GCSE page" />
         )
@@ -25,4 +26,11 @@ function gcse(){
 
     )
 }
+=======
+
+    return (
+        <BannerGcse title="This is the GCSE page" subText="Yes still GCSE page" />
+        )
+    }
+>>>>>>> 6fc71e1e3f2ed07a9a25191dc529f6e1f118421c
 export default gcse;
