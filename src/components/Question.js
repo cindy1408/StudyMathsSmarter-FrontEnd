@@ -22,7 +22,7 @@ const Question = (props) => {
                 <img src= {"data:image/png;base64," + props.question.question_image}  alt="Questions" /> 
             </div>
 
-            <AnswerButtons id={props.id} />
+            <AnswerButtons id={props.id} resource={props.question.resource}/>
 
         </div>
     )

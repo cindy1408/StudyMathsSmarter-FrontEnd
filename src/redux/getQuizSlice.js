@@ -1,20 +1,28 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { useSelector } from "react-redux"
 
 //Grabs the last quiz id (use for updating quiz score AND incase user wants to sign up)
-export const getQuizSlice = createAsyncThunk(
-    'quiz/getQuizId', 
+export const fetchLatestQuizId = createAsyncThunk(
+    'quizId/getQuizId', 
     async () => {
-        return fetch("http://localhost:8080/study_maths_smarter/quiz")
-        .then((response) => response.json())
-        .then((data) => data[data.length - 1].id)
-        
-        // if(response.ok){
-        //     const data = await response.json();
-        //     const quizId = data[data.length - 1].id;
-        //     return {quizId};
-        // }
+        const response = await fetch("http://localhost:8080/study_maths_smarter/quiz")
+        const data = response.json();
+        const lastQuizId = data[data.length-1].id;
+        return lastQuizId;
     }
 );
+
+//PUT to addLocalDate to quiz
+export const addLocalDate = createAsyncThunk(
+    'addLocalDate',
+    async () => {
+        let quizId = useSelector(state => state.quizId.id);
+        return fetch(`http://study_maths_smarter/quiz/${quizId}`, {
+            method: "PUT", 
+            headers: {'Content-Type': 'application/json'},
+        })
+    }
+)
 
 //Post an empty quiz when user clicks start in order to be able to update
 export const startQuiz = createAsyncThunk(
@@ -42,13 +50,11 @@ export const startQuiz = createAsyncThunk(
 )
 
 export const getQuizIdSlice = createSlice({
+    //name of the slice 
     name: 'startQuiz', 
     initialState: [], 
-    reducers: {
-
-    },
     extraReducers: {
-        [getQuizSlice.fulfilled]: (state, action) => {
+        [fetchLatestQuizId.fulfilled]: (state, action) => {
             return action.payload.quizId;
         }, 
         [startQuiz.fulfilled]: (state, {payload}) => {
@@ -57,5 +63,6 @@ export const getQuizIdSlice = createSlice({
     }
 })
 
+// export action names (the ones in the reducers)
 export const { addQuiz } = getQuizIdSlice.actions;
 export default getQuizIdSlice.reducer;
