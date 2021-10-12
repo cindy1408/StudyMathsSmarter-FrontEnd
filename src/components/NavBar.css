@@ -1,4 +1,9 @@
- .navbar {
+
+.navBarAlign > ul{
+    text-align: center;
+
+}
+.navbar {
     background: rgb(255, 236, 209);
     height: 150px;
     
@@ -19,7 +24,7 @@
   }
 
 .navbar-text {
-
-    padding-left:150px;
+    padding-left:600px;
     padding-right:60px;
 }
+

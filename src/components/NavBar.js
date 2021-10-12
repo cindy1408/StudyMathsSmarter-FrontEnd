@@ -7,7 +7,8 @@ import {Link} from 'react-router-dom';
 
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+
+    <nav className="  navbar navbar-expand-lg navbar-light">
          
     <img className="logo" src='./resources/logo3.png'/>
    
@@ -15,20 +16,28 @@ function NavBar() {
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="navBarAlign collapse navbar-collapse " > 
     <ul class="navbar-nav">
+      <Link className="nav-link" to="/gcse">
       <li class="nav-item active">
-        <a class="nav-link" href="./pages/gcse.js"> GCSE </a>
+         GCSE
       </li>
-         <li class="nav-item">
-        <a class="nav-link" href="#">IGCSE</a>
+      </Link>
+      <Link className="nav-link" to="/igcse">
+      <li class="nav-item active">
+         IGCSE
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">AS-Level</a>
+      </Link>
+      <Link className="nav-link" to="/as-level">
+      <li class="nav-item active">
+         AS-LEVEL
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">A-Levels</a>
+      </Link>
+      <Link className="nav-link" to="/a-level">
+      <li class="nav-item active">
+         A-LEVEL
       </li>
+      </Link>        
       </ul>
       
       <span class="navbar-text">
@@ -42,3 +51,8 @@ function NavBar() {
   }
 
 export default NavBar;
+
+
+
+
+// id="navbarNav" --> Line 19
