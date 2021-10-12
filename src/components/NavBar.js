@@ -35,12 +35,12 @@ function NavBar() {
          IGCSE
       </li>
       </Link>
-      <Link className="nav-link" to="/as-level">
+      <Link className="nav-link" to="/asLevel">
       <li class="nav-item active">
          AS-LEVEL
       </li>
       </Link>
-      <Link className="nav-link" to="/a-level">
+      <Link className="nav-link" to="/aLevel">
       <li class="nav-item active">
          A-LEVEL
       </li>
