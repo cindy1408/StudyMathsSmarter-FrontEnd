@@ -7,9 +7,14 @@ import {Link} from 'react-router-dom';
 
 function NavBar() {
   return (
+<<<<<<< HEAD
 
     <nav className="  navbar navbar-expand-lg navbar-light">
          
+=======
+    <nav className="navbar navbar-expand-lg navbar-light">
+  
+>>>>>>> 91925b8ff8f9a58d5765d1b2adf58961d73fede8
     <img className="logo" src='./resources/logo3.png'/>
    
 
@@ -70,6 +75,7 @@ function NavBar() {
     
     
   </div>
+ 
 </nav>
   );
   }
