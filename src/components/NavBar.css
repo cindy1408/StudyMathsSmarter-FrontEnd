@@ -1,8 +1,23 @@
+<<<<<<< HEAD
 .navbar {
   background: rgb(255, 236, 209);
   height: 150px;
+<<<<<<< HEAD
+=======
+
+.navBarAlign > ul{
+    text-align: center;
+
+}
+.navbar {
+    background: rgb(255, 236, 209);
+    height: 150px;
+    
+>>>>>>> ada738768dc9d5045201fc6aa6de2593f0a756dc
+=======
   padding-left: 15%;
   padding-right: 15%;
+>>>>>>> 91925b8ff8f9a58d5765d1b2adf58961d73fede8
 }
 
 .logo {
@@ -21,6 +36,7 @@
 }
 
 .navbar-text {
+<<<<<<< HEAD
   padding-left: 150px;
   padding-right: 60px;
 }
@@ -28,7 +44,16 @@ li.addPadding {
   padding-left: 10px;
   padding-right: 10px;
 }
+<<<<<<< HEAD
 
 .gsceBanner {
   background-color: blue;
 }
+=======
+=======
+    padding-left:600px;
+    padding-right:60px;
+}
+
+>>>>>>> ada738768dc9d5045201fc6aa6de2593f0a756dc
+>>>>>>> dd7a5df9f71f1a162315d8cbc87d625a5bfece9f

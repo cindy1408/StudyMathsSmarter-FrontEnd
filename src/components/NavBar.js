@@ -7,15 +7,25 @@ import {Link} from 'react-router-dom';
 
 function NavBar() {
   return (
+<<<<<<< HEAD
     <div>
+=======
+<<<<<<< HEAD
+
+    <nav className="  navbar navbar-expand-lg navbar-light">
+         
+=======
+>>>>>>> dd7a5df9f71f1a162315d8cbc87d625a5bfece9f
     <nav className="navbar navbar-expand-lg navbar-light">
   
+>>>>>>> 91925b8ff8f9a58d5765d1b2adf58961d73fede8
     <img className="logo" src='./resources/logo3.png'/>
    
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+<<<<<<< HEAD
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ">
     <Link className="nav-link" to="/homePage">
@@ -25,10 +35,17 @@ function NavBar() {
       </Link>
       <Link className="nav-link" to="/gcse">
       <li class="nav-item active addPadding">
+=======
+  <div class="navBarAlign collapse navbar-collapse " > 
+    <ul class="navbar-nav">
+      <Link className="nav-link" to="/gcse">
+      <li class="nav-item active">
+>>>>>>> ada738768dc9d5045201fc6aa6de2593f0a756dc
          GCSE
       </li>
       </Link>
       <Link className="nav-link" to="/igcse">
+<<<<<<< HEAD
       <li class="nav-item active addPadding">
          IGCSE
       </li>
@@ -43,6 +60,22 @@ function NavBar() {
          A-LEVEL
       </li>
       </Link>
+=======
+      <li class="nav-item active">
+         IGCSE
+      </li>
+      </Link>
+      <Link className="nav-link" to="/as-level">
+      <li class="nav-item active">
+         AS-LEVEL
+      </li>
+      </Link>
+      <Link className="nav-link" to="/a-level">
+      <li class="nav-item active">
+         A-LEVEL
+      </li>
+      </Link>        
+>>>>>>> ada738768dc9d5045201fc6aa6de2593f0a756dc
       </ul>
       
       <span class="navbar-text">
@@ -59,3 +92,8 @@ function NavBar() {
   }
 
 export default NavBar;
+
+
+
+
+// id="navbarNav" --> Line 19

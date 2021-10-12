@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer {
   background-color: rgb(255, 236, 209);
   padding: 40px 0px;
@@ -10,3 +11,17 @@
   margin-bottom: 0;
   margin-left: 50px;
 }
+=======
+ .footer {
+    background-color: rgb(255, 236, 209);
+    padding: 40px 0px;
+    color: #78290f;
+    bottom: 0;
+  }
+  
+  .footerText {
+    font-size:12px;
+    margin-bottom: 0;
+    margin-left: 50px;
+  } 
+>>>>>>> ada738768dc9d5045201fc6aa6de2593f0a756dc
