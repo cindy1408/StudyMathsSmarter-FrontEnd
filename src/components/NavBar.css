@@ -28,3 +28,7 @@ li.addPadding {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.gsceBanner {
+  background-color: blue;
+}

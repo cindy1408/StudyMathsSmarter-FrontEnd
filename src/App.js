@@ -8,6 +8,7 @@ import igcse from './pages/igcse';
 import Footer from './components/Footer';
 import asLevel from './pages/asLevel';
 import aLevel from './pages/aLevel';
+import homePage from './pages/homePage';
 
 function App() {
   return (
@@ -17,10 +18,12 @@ function App() {
       <div className="app">
       <NavBar/>
         <Switch>
-          <Route path="/gcse" component={gcse}/>
-          <Route path="/igcse" component={igcse}/>
-          <Route path="/asLevel" component={asLevel}/>
-          <Route path="/aLevel" component={aLevel}/>
+          <Route path="/" component={homePage} exact/>
+          <Route path="/homePage" component={homePage} exact/>
+          <Route path="/gcse" component={gcse} exact/>
+          <Route path="/igcse" component={igcse} exact/>
+          <Route path="/asLevel" component={asLevel} exact/>
+          <Route path="/aLevel" component={aLevel} exact/>
         </Switch>
       <Footer/>  
       </div>

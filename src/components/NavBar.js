@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 
 function NavBar() {
   return (
+    <div>
     <nav className="navbar navbar-expand-lg navbar-light">
   
     <img className="logo" src='./resources/logo3.png'/>
@@ -17,6 +18,11 @@ function NavBar() {
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ">
+    <Link className="nav-link" to="/homePage">
+      <li class="nav-item active addPadding">
+         HOME
+      </li>
+      </Link>
       <Link className="nav-link" to="/gcse">
       <li class="nav-item active addPadding">
          GCSE
@@ -47,6 +53,8 @@ function NavBar() {
   </div>
  
 </nav>
+{/*<p>I am always here</p>*/}
+</div>
   );
   }
 
