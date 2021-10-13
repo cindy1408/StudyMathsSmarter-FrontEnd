@@ -1,0 +1,42 @@
+.navBarAlign > ul {
+    text-align: center;
+  }
+  .navbar {
+    background: rgb(255, 236, 209);
+    height: 150px;
+  
+    padding-left: 30%;
+    padding-right: 15%;
+  }
+  .fontNav {
+    font-size: 50px;
+  }
+  
+  .logo {
+    width: 450px;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .navbar-nav > li {
+    padding-left: 40px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-text {
+    padding-left: 150px;
+    padding-right: 60px;
+  }
+  li.addPadding {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .gsceBanner {
+    background-color: blue;
+  }
+  
