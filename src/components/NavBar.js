@@ -38,7 +38,7 @@ function NavBar() {
       </Link>
       <Link className="nav-link" to="/asLevel">
       <li class="fontNav nav-item active navBarStyling">
-         AS-LEVEL
+         AS
       </li>
       </Link>
       <Link className="nav-link" to="/aLevel">
