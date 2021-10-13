@@ -1,12 +1,12 @@
- .footer {
-    background-color: rgb(255, 236, 209);
-    padding: 40px 0px;
-    color: #78290f;
-    bottom: 0;
-  }
-  
-  .footerText {
-    font-size:12px;
-    margin-bottom: 0;
-    margin-left: 50px;
-  } 
+.footer {
+  background-color: rgb(255, 236, 209);
+  padding: 40px 0px;
+  color: #78290f;
+  align-self: end;
+}
+
+.footerText {
+  font-size: 12px;
+  margin-bottom: 0;
+  margin-left: 50px;
+}
