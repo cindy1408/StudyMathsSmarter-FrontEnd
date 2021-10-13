@@ -10,8 +10,8 @@ export default function Home(props) {
     
     function handleClick(){
         dispatch(startQuiz());
-        dispatch(addLocalDate());
-        // dispatch(addTimeStamp());
+        // dispatch(addLocalDate());
+        dispatch(addTimeStamp());
         history.push('/questions')
     }
     return (
