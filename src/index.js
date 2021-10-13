@@ -7,19 +7,13 @@ import { BrowserRouter } from 'react-router-dom';
 import store from './redux/store';
 import { Provider } from 'react-redux';
 
-
 ReactDOM.render(
   <React.StrictMode>
-<<<<<<< HEAD
     <Provider store={store}>
       <BrowserRouter>     
         <App />    
       </BrowserRouter>
     </Provider>
-=======
-    <App />
-   
->>>>>>> Jessica2
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -29,12 +29,15 @@ export const startQuiz = createAsyncThunk(
     'quiz/startQuiz', 
     async (dispatch, getState) => {
         const quizResult = {
-            question_g1_score: null, 
-            question_g2_score: null, 
             question_s1_score: null, 
             question_s2_score: null, 
+            question_s3_score: null, 
+            question_g1_score: null, 
+            question_g2_score: null,
+            question_g3_score: null,  
             question_t1_score: null, 
             question_t2_score: null, 
+            question_t3_score: null, 
             result: null, 
             time_stamp: null, 
             user_id: null
