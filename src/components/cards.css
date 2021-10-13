@@ -1,6 +1,6 @@
 .banner {
   background-color: #15616d3f;
-  height: 200px;
+  height: 20%;
   text-align: left;
   padding-left: 27rem;
 }
@@ -17,8 +17,9 @@
 
 .mainBody {
   height: 800px;
-  width: 3000px;
+  width: 1300px;
   display: flex;
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 0px;
@@ -26,6 +27,21 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+@media (min-width: 3000px) {
+  .mainBody {
+    height: 800px;
+    width: 45%;
+    display: flex;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 0px;
+    background-color: whitesmoke;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
 .mainBodyImage {
   height: 800px;
   width: 1000px;
@@ -34,6 +50,7 @@
 .mainBodyContent {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   text-align: left;
   padding-left: 3rem;
   padding-right: 3rem;
