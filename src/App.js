@@ -6,6 +6,7 @@ import igcse from './pages/igcse';
 import asLevel from './pages/asLevel';
 import aLevel from './pages/aLevel';
 import homePage from './pages/homePage';
+import login from './pages/login';
 import Footer from './components/Footer';
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/igcse" component={igcse} exact/>
           <Route path="/asLevel" component={asLevel} exact/>
           <Route path="/aLevel" component={aLevel} exact/>
+          <Route path="/login" component={login} exact/>
           </Switch>
       <Footer/>  
       </div>

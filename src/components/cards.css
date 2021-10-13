@@ -1,53 +1,56 @@
 .banner {
-  background-color: #15616d3f;
+  background-color: rgb(255, 236, 209);
   height: 20%;
   text-align: left;
-  padding-left: 27rem;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-  padding-right: 27rem;
+  padding-left: 13.5rem;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  padding-right: 13.5rem;
 }
 
 .bannerTitle {
-  font-size: 100px;
+  font-size: 25px;
+}
+.bannerSubText {
+  font-size: 17px;
 }
 
 .bannerGcse {
   background-color: #78290f3f;
-  height: 200px;
-  text-align: 20px 300px 20px 400px;
+  height: 100px;
+  text-align: 10px 150px 10px 200px;
 }
 
 .mainBody {
-  height: 800px;
-  width: 1300px;
+  height: 400px;
+  width: 650px;
   display: flex;
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 0px;
   background-color: whitesmoke;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
-@media (min-width: 3000px) {
+@media (min-width: 1500px) {
   .mainBody {
-    height: 800px;
+    height: 400px;
     width: 45%;
     display: flex;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 0px;
     background-color: whitesmoke;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 }
 
 .mainBodyImage {
-  height: 800px;
-  width: 1000px;
+  height: 100%;
+  width: 40%;
 }
 
 .mainBodyContent {
@@ -55,13 +58,14 @@
   flex-direction: column;
   flex-wrap: wrap;
   text-align: left;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .mainBodyTitle {
-  font-size: 100px;
+  font-size: 25px;
+  padding-top: 1.5rem;
 }
-
 .mainBodySubText {
+  font-size: 17px;
 }

@@ -1,12 +1,17 @@
 .footer {
-  background-color: rgb(255, 236, 209);
-  padding: 40px 0px;
+  background-color: white;
+  border-top: 3px solid #78290f;
+  padding: 20px 0px;
   color: #78290f;
   align-self: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footerText {
-  font-size: 50px;
+  font-size: 25px;
   margin-bottom: 0;
   margin-left: 50px;
+  margin-right: 50px;
 }
