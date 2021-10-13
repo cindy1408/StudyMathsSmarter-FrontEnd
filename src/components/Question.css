@@ -1,7 +1,11 @@
+*{
+    background-color: rgb(255, 236, 209);
+}
+
 img {
     max-width: auto;
-    height: 80%;
-    border: solid 2px black;
+    height: 90%;
+    /* border: solid 2px black; */
 }
 
 .question {
@@ -9,7 +13,7 @@ img {
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
-    background-color: #D5DFE5;
+    font-family: 'Noto Serif', serif;
 }
 .questionImage {
     display: flex; 
@@ -21,4 +25,11 @@ img {
     width: 90vh;
     height: 40vh;
     background-color: white;
+}
+
+.question h2 {
+    background-color:rgb(255, 236, 209); 
+    color: black;
+    font-size: 2em;
+    font-family: 'Noto Serif', serif;
 }

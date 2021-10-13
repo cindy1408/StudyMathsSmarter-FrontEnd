@@ -31,19 +31,21 @@ export default function Weakness(props){
     return(
         <div className='weakness'>
           {resources()}
-            <div className='weaknessTopics'>
-                <h3>Topics to improve on: </h3>
+          <h3>Topics to improve on: </h3>
+          <div className='weaknessInformation'> 
+            <div className='weaknessTopics'>              
                 <h3>{props.topics.map(eachTopic => {
-                    return <h4>{eachTopic}<br /></h4>
+                    return <h4>{eachTopic}</h4>
                 })}</h3>
             </div>
             <div className='weaknessResources'>
                 <h3>
                     {requiredResources.map(eachTopic => <div><a href={eachTopic} target="_blank">
-                        Click here for examination!<br /></a></div>
+                        exam style practise!<br /></a></div>
                 )}
                 </h3> 
-            </div>    
+            </div> 
+            </div>   
         </div>
     )
 }

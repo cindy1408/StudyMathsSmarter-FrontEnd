@@ -45,15 +45,19 @@ export default function Results(props){
     }
 
     return(
-        <div>
-            <h3>Thank you for taking our quiz</h3>
-            <h3>Your result is: {result} out of 9</h3>
-            <h3>Percentage: {percentage} % </h3>
+        <div className='resultSection'>
+            <h2>Thank you for taking our quiz</h2>
+            <div className='resultScore'>
+                <h3>Your result is: {percentage} % ({result} out of 9)</h3>
+            </div>
             <div className='strengthAndWeakness'>
                 <div className='strength'>
-                <h3>Strength: {strength.join()} </h3>
+                <h3>Strength: </h3>
+                <h3>{strength.map(eachTopic => {
+                    return <h4>{eachTopic}</h4>
+                })}</h3>
                 </div>
-                <div className='weakness'>
+                <div className='improve'>
                     <Weakness topics={weakness} />
                 </div> 
             </div>          

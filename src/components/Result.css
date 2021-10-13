@@ -1,13 +1,34 @@
 .strengthAndWeakness {
     display: flex; 
     flex-direction: row; 
-    background-color: pink;
     justify-content: center;
-    align-items: center;
+    background-color: #15616d;
 }
 
 .strength {
-    margin: 3px;
-    border: solid black 3px;
-    padding: 4em;
+    margin: 0 2%;
+    border: solid 5px #ff7d00;; 
+    width: 25%;
+    border-radius: 5px;
+    font-family: 'Noto Serif', serif;
+}
+
+.resultSection {
+    margin: 7%;
+    padding: 2% 5% 5%;
+    border: solid 8px #78290f;
+    background-color: #15616d;
+}
+
+.resultScore h3, 
+h2 {
+    background-color: #15616d;
+    color: #ffecd1;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+}
+
+.improve {
+    border-radius: 5px;
+    border: 5px solid #ff7d00;
 }
