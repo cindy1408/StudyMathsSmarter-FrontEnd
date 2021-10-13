@@ -1,7 +1,6 @@
 import './App.css';
 <<<<<<< HEAD
 import { Route, Switch } from 'react-router-dom';
-import UserContainer from './containers/UserContainer';
 import QuestionContainer from './containers/QuestionContainer';
 import Results from './components/Results';
 import Home from './components/Home';
