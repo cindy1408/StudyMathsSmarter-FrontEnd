@@ -2,7 +2,7 @@
   background-color: rgb(255, 236, 209);
   padding: 40px 0px;
   color: #78290f;
-  bottom: 0;
+  align-self: end;
 }
 
 .footerText {
