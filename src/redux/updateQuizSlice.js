@@ -3,6 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const updateQuizResult = createAsyncThunk(
     'updateQuizResult', 
     async(payload) => {
+
         const response = await fetch(`http://localhost:8080/study_maths_smarter/quiz/${payload.quizId}`, {
             method: "PUT", 
             headers: {'Content-Type': 'application/json'}, 

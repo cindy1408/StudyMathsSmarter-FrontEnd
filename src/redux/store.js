@@ -1,14 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit';
 import questionReducer from './questionSlice';
-import startQuizReducer from './getQuizSlice';
+import startQuizReducer from './startQuizSlice';
 import updateQuizReducer from './updateQuizSlice';
 import questionsReducer from './getQuestionSlice';
+import quizReducer from './getQuizSlice';
 
 export default configureStore({
 	reducer: {
         questions: questionReducer,
-        startQuiz: startQuizReducer,
+        quizResult: startQuizReducer,
         quizResult: updateQuizReducer,
-        questionDb: questionsReducer
+        questionDb: questionsReducer, 
+        quizDb: quizReducer
     },
 });
