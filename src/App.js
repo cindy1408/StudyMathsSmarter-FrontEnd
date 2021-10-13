@@ -9,9 +9,6 @@ import homePage from './pages/homePage';
 import login from './pages/login';
 import Footer from './components/Footer';
 
-
-
-
 function App() {
   return (
     <div className="App">
@@ -20,7 +17,6 @@ function App() {
       <div className="app">
       <NavBar/>
         <Switch>
-
           <Route path="/" component={homePage} exact/>
           <Route path="/homePage" component={homePage} exact/>
           <Route path="/gcse" component={gcse} exact/>

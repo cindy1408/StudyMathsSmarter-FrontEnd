@@ -22,32 +22,32 @@ function NavBar() {
   <img className="logo" src='./resources/logo.png'/>
     <ul class="navbar-nav ">
     <Link className="nav-link" to="/homePage">
-      <li class="fontNav nav-item active addPadding">
+      <li class="fontNav nav-item active navBarStyling">
          HOME
       </li>
       </Link>
       <Link className="nav-link" to="/gcse">
-      <li class="fontNav nav-item active addPadding">
+      <li class="fontNav nav-item active navBarStyling">
          GCSE
       </li>
       </Link>
       <Link className="nav-link" to="/igcse">
-      <li class="fontNav nav-item active addPadding">
+      <li class="fontNav nav-item active navBarStyling">
          IGCSE
       </li>
       </Link>
       <Link className="nav-link" to="/asLevel">
-      <li class="fontNav nav-item active addPadding">
+      <li class="fontNav nav-item active navBarStyling">
          AS-LEVEL
       </li>
       </Link>
       <Link className="nav-link" to="/aLevel">
-      <li class="fontNav nav-item active addPadding">
+      <li class="fontNav nav-item active navBarStyling">
          A-LEVEL
       </li>
       </Link>   
       <Link className="nav-link" to="/login">
-      <li class="fontNav nav-item active addPadding">
+      <li class="fontNav nav-item active navBarStyling">
      LOGIN
       </li>
       </Link>     
