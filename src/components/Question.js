@@ -20,7 +20,7 @@ const Question = (props) => {
             <h2>GCSE Assessment</h2>
             <h3>Question: {props.id + 1} - {topic} - Level: {JSON.stringify(props.question.level)} </h3>
             <div className='questionImage'>
-                <img src= {"data:image/png;base64," + props.question.questionImage}  alt="Questions" /> 
+                <img src= {"data:image/png;base64," + props.question.question_image}  alt="Questions" /> 
             </div>
 
             <AnswerButtons id={props.id} resource={props.question.resource}/>
