@@ -12,7 +12,13 @@ export const questionSlice = createSlice({
             }
             return question;
         },
+        resetQuestion: (state, action) => {
+            const question = {
+                questionNum: 0
+            }
+            return question;
+        }
     },
 })
-export const { nextQuestion } = questionSlice.actions;
+export const { nextQuestion, resetQuestion } = questionSlice.actions;
 export default questionSlice.reducer;

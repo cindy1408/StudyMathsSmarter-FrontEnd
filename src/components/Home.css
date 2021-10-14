@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    margin: 0 7em 7em 5em;
+    margin: 0 7em 7em ;
 }
 
 .homepage img {
@@ -37,14 +37,15 @@
 @keyframes glowing {
     0% {
       background-color: #1a6e7b;
-      box-shadow: 0 0 3px #1a6e7b;
+      box-shadow: 0 0 3px #bbe8ee;
     }
     50% {
       background-color: #32a3b5;
-      box-shadow: 0 0 10px #32a3b5;
+      box-shadow: 0 0 10px #188b9d;
+      border: #188b9d solid 4px;
     }
     100% {
       background-color: #1a6e7b;
-      box-shadow: 0 0 3px #1a6e7b;
+      box-shadow: 0 0 3px #bbe8ee;
     }
   }

@@ -1,5 +1,6 @@
 import Question from './Question';
 import {useSelector} from "react-redux"
+import Footer from "./Footer";
 
 
 const QuestionList = (props) => {
@@ -14,6 +15,7 @@ const QuestionList = (props) => {
     return(
         <div>
             {questionList[questionNum]}
+            <Footer />
         </div>
     )
 }
