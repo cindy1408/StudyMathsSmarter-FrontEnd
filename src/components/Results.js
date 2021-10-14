@@ -1,7 +1,13 @@
 import React from 'react';
 import {useSelector} from "react-redux";
+import { resetQuestion } from '../redux/questionSlice';
 import './Result.css';
 import Weakness from './Weakness';
+import { useHistory } from 'react-router';
+import { useDispatch } from 'react-redux';
+import { startQuiz } from '../redux/startQuizSlice';
+import { addTimeStamp } from '../redux/updateQuizSlice';
+import Footer from './Footer';
 
 export default function Results(props){
     let result = useSelector(state => state.quizResult.result);
@@ -44,7 +50,18 @@ export default function Results(props){
         weakness.push("Trigonometry")
     }
 
+    const history = useHistory();
+    const dispatch = useDispatch();
+
+    function handleClick(){
+        dispatch(startQuiz());
+        dispatch(resetQuestion());
+        dispatch(addTimeStamp());
+        history.push('/questions')
+    }
+
     return(
+        <div>
         <div className='resultSection'>
             <h2>Thank you for taking our quiz</h2>
             <div className='resultScore'>
@@ -60,7 +77,10 @@ export default function Results(props){
                 <div className='improve'>
                     <Weakness topics={weakness} />
                 </div> 
-            </div>          
+            </div>     
+            <button className='tryAgain' onClick={() => handleClick()}>Try again</button>   
+        </div>
+        <Footer />
         </div>
     )
 }

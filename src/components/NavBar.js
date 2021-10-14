@@ -8,11 +8,11 @@ export default function NavBar(){
         <nav>
         <div id="navbarNav">
         <ul class="navbar-nav">
-    {/* <Link className="nav-link" to="/">
+    <Link className="nav-link" to="/homepage">
       <li >
          HOME
       </li>
-      </Link> */}
+      </Link>
       <Link className="nav-link" to="/">
       <li>
          GCSE
