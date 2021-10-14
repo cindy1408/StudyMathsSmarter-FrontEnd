@@ -117,12 +117,13 @@
   padding-right: 1.5rem;
 }
 .mainBodyTitle {
-  font-size: 40px;
+  font-size: 30px;
   padding-top: 1.5rem;
   color: #15616d;
+  margin-bottom: 0px;
 }
 .mainBodySubText {
-  font-size: 17px;
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.712);
 }
 
