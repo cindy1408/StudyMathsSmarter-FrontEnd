@@ -3,9 +3,9 @@ import { useHistory } from 'react-router';
 import { useDispatch } from 'react-redux';
 import { startQuiz } from '../redux/startQuizSlice';
 import { addTimeStamp } from '../redux/updateQuizSlice';
-import './Home.css';
+import './GCSEAssessment.css';
 
-export default function Home(props) {
+export default function GCSEAssessment(props) {
     const history = useHistory();
     const dispatch = useDispatch();
     

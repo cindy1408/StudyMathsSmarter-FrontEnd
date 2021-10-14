@@ -52,7 +52,7 @@ const Login = (props) => {
 				<a href="#" ><i className="fa fa-facebook-f"></i></a>
 				<a href="#" ><i className="fa fa-google"></i></a>
 			</div>
-			<span>or use your account</span>
+			<span className="spans">or use your account</span>
                 <input type="text" placeholder="Email" name="username" value={username} onChange={onUsernameChange} />
        
                 <input type="password" placeholder="Password" name="password" value={password} onChange={onPasswordChange} />

@@ -42,6 +42,7 @@ function MainBody2 (props){
             <div className="mainBodyContent">
             <h1 className="mainBodyTitle">{props.title}</h1>
             <h3 className="mainBodySubText">{props.subText}</h3>
+            <h3 className="mainBodySubText">{props.subText2}</h3>
             </div>
         </div>
         

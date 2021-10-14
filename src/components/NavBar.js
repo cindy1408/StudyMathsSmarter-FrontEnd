@@ -1,54 +1,66 @@
 import React from "react";
 import "./NavBar.css";
 import {Link} from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function NavBar(){
+
+
+function NavBar() {
   return (
-    <div className = 'navbar'>
-        <nav>
-        <div id="navbarNav">
-        <ul class="navbar-nav">
-    <Link className="nav-link" to="/homepage">
-      <li >
+
+    <div>
+
+
+    <nav className="navbar navbar-expand-lg navbar-light">
+  
+   
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class=" centerContentNav navbar-collapse" id="">
+  <img className="logo" src='./resources/logo.png'/>
+    <ul class="navbar-nav ">
+    <Link className="nav-link" to="/homePage">
+      <li class="fontNav nav-item active navBarStyling">
          HOME
       </li>
       </Link>
       <Link className="nav-link" to="/GCSEStart">
-      <li>
+      <li class="fontNav nav-item active navBarStyling">
          GCSE
       </li>
       </Link>
       <Link className="nav-link" to="/comingSoon">
-      <li>
+      <li class="fontNav nav-item active navBarStyling">
          IGCSE
       </li>
-      <p>coming soon!</p>
       </Link>
       <Link className="nav-link" to="/comingSoon">
-      <li >
-         AS-LEVEL
+      <li class="fontNav nav-item active navBarStyling">
+         AS
       </li>
-      <p>coming soon!</p>
       </Link>
       <Link className="nav-link" to="/comingSoon">
-      <li >
+      <li class="fontNav nav-item active navBarStyling">
          A-LEVEL
       </li>
-      <p>coming soon!</p>
-      </Link>     
-
-    <Link className="nav-link" to="/login">
-      <li >
-         Login/Register
+      </Link>   
+      <Link className="nav-link" to="/login">
+      <li class="fontNav nav-item active navBarStyling">
+     LOGIN
       </li>
-      </Link >     
+      </Link>     
       </ul>
-
-    
+      
+      
     
   </div>
  
 </nav>
+{/*<p>I am always here</p>*/}
 </div>
   );
   }
+
+export default NavBar;

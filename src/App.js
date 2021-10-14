@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import QuestionContainer from './containers/QuestionContainer';
 import Results from './components/Results';
 import ComingSoon from './components/ComingSoon';
-import Home from './components/Home';
+import GCSEAssessment from './components/GCSEAssessment';
 import QuizContainer from './containers/QuizContainer'
 import Login from './components/Login'
 import AuthenticatedRoute from './components/AuthenticatedRoute'
@@ -20,7 +20,7 @@ function App() {
       <Switch>
       <Route exact path="/" exact component={homePage} />
         <Route exact path="/homepage" exact component={homePage} />
-        <Route path="/GCSEStart" exact component={Home} />
+        <Route path="/GCSEStart" exact component={GCSEAssessment} />
         <Route path="/questions" exact component={QuestionContainer} />
         <Route path="/results" exact component={Results} />
         <Route path="/comingSoon" exact component={ComingSoon} />
