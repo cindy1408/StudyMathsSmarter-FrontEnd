@@ -60,6 +60,13 @@ export default function Results(props){
         history.push('/questions')
     }
 
+    function goHome(){
+        // dispatch(startQuiz());
+        dispatch(resetQuestion());
+        // dispatch(addTimeStamp());
+        history.push('/')
+    }
+
     return(
         <div>
         <div className='resultSection'>
@@ -78,7 +85,8 @@ export default function Results(props){
                     <Weakness topics={weakness} />
                 </div> 
             </div>     
-            <button className='tryAgain' onClick={() => handleClick()}>Try again</button>   
+            <button className='tryAgain' onClick={() => handleClick()}>Try again</button> 
+            <button className='homePage' onClick={() => goHome()} >Home Page</button>  
         </div>
         <Footer />
         </div>
