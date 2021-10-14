@@ -19,10 +19,10 @@ export const getUserSlice = createSlice({
     name: 'user',
     initialState: {
         id: 0,
-        firstName:null,
-        lastName:null,
-        email:"admin",
-        password:"admin",
+        first_name:null,
+        last_name:null,
+        email:null,
+        password:null,
         score:0,
         role: null
         },
@@ -31,10 +31,10 @@ export const getUserSlice = createSlice({
         updateUsername: (state,action) => {
             const newUser = {
                 id: 0,
-                firstName:null,
-                lastName:null,
+                first_name:null,
+                last_name:null,
                 email: action.payload.email,
-                password: "admin",
+                password: null,
                 score: 0,
                 role: null
             }

@@ -29,6 +29,7 @@ const Login = (props) => {
        AuthenticationService
        .executeAuthenticationService(username, password)
        .then(()=>{
+           dispatch(getUserFromDB({username: username, password: password}))
            history.push("/profile");
        }).catch(()=>{
            setShowSuccessMessage(false);

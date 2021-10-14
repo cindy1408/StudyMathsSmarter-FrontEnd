@@ -9,7 +9,6 @@ class AuthenticationService {
     }
 
     executeAuthenticationService(username, password) {
-        console.log("helo");
         return axios.get(`${API_URL}/auth`,
             { headers: { authorization: this.createBasicAuthToken(username, password) } })
     }

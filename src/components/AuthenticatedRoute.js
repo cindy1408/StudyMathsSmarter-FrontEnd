@@ -3,17 +3,11 @@ import {Route, Redirect} from 'react-router-dom'
 import AuthenticationService from '../service/AuthenticationService'
 import {useSelector} from 'react-redux'
 
-class AuthenticatedRoute extends React.Component {
-    constructor(props) {
-        super(props)
+function AuthenticatedRoute(props) {
+    const userId = useSelector(state => state.user.id);
+    return(
+        (userId == 0) ? <Redirect to="/login" /> :<Route {...props} /> 
+    )  
     }
-    render(){
-        if (true ){
-            return <Route {...this.props} />;
-        } else{
-            return <Redirect to="/login" />
-        }
-    }
-}
 
 export default AuthenticatedRoute;
