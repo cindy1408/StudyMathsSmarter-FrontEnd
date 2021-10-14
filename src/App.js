@@ -18,11 +18,12 @@ function App() {
       <Router>
       <NavBar/>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/homepage" component={homePage} />
-        <Route path="/questions" component={QuestionContainer} />
-        <Route path="/results" component={Results} />
-        <Route path="/comingSoon" component={ComingSoon} />
+      <Route exact path="/" exact component={homePage} />
+        <Route exact path="/homepage" exact component={homePage} />
+        <Route path="/GCSEStart" exact component={Home} />
+        <Route path="/questions" exact component={QuestionContainer} />
+        <Route path="/results" exact component={Results} />
+        <Route path="/comingSoon" exact component={ComingSoon} />
         <Route path="/login" exact component={Login} />
         <AuthenticatedRoute path="/profile" exact component={ProfileContainer} />
         <Route component={Error} />

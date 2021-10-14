@@ -13,7 +13,7 @@ export default function NavBar(){
          HOME
       </li>
       </Link>
-      <Link className="nav-link" to="/">
+      <Link className="nav-link" to="/GCSEStart">
       <li>
          GCSE
       </li>
