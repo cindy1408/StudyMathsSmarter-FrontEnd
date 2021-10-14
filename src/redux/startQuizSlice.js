@@ -18,7 +18,7 @@ export const addLocalDate = createAsyncThunk(
     
         const lastQuidId = quizId && quizId.map((quiz, i) => <p key={i}>{quiz}</p>)
 
-        return fetch(`http://study_maths_smarter/quiz/${lastQuidId}`, {
+        return fetch(`http://study_maths_smarter/quiz/${quizId}`, {
             method: "PUT", 
             headers: {'Content-Type': 'application/json'},
         })

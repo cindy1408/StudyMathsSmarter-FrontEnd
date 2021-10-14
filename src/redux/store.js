@@ -11,6 +11,6 @@ export default configureStore({
         quizResult: startQuizReducer,
         quizResult: updateQuizReducer,
         questionDb: questionsReducer, 
-        quizDb: quizReducer
+        quizId: quizReducer
     },
 });

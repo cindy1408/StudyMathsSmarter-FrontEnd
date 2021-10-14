@@ -31,7 +31,7 @@ export const updateQuizSlice = createSlice({
     reducers: {
         addTimeStamp: (state, action) => {
             let date = new Date(); 
-            let fullDate = `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}`;
+            let fullDate = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
             let fullDateConverted = fullDate.toString()
             const newResult = {
             question_s1_score: null, 
