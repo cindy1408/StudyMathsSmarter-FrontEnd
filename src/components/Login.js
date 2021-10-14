@@ -44,7 +44,7 @@ const Login = (props) => {
   
     return(
         <div className="login-background">
-        <button onClick={() => history.push("/")} className="login-home-button"> Home</button>
+        <button onClick={() => history.push("/")} className="login-home-button"> {"<"}</button>
             <div className="login-container">
             <form className="form-container sign-in-form">
             <h1 className="login-heading">Login</h1>
