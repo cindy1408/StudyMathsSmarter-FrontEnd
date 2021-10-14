@@ -5,6 +5,7 @@
   color: #78290f;
   align-self: end;
   display: flex;
+<<<<<<< HEAD
   flex-direction: row;
   justify-content: center;
 }
@@ -14,4 +15,14 @@
   margin-bottom: 0;
   margin-left: 50px;
   margin-right: 50px;
+=======
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footerText {
+  font-size: 17px;
+  margin-bottom: 0;
+  margin: 0 8%;
+>>>>>>> b43c461649c6619908f44f795093f6b4334ca351
 }
