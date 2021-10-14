@@ -6,10 +6,8 @@ import igcse from './pages/igcse';
 import asLevel from './pages/asLevel';
 import aLevel from './pages/aLevel';
 import homePage from './pages/homePage';
+import login from './pages/login';
 import Footer from './components/Footer';
-
-
-
 
 function App() {
   return (
@@ -19,13 +17,13 @@ function App() {
       <div className="app">
       <NavBar/>
         <Switch>
-
           <Route path="/" component={homePage} exact/>
           <Route path="/homePage" component={homePage} exact/>
           <Route path="/gcse" component={gcse} exact/>
           <Route path="/igcse" component={igcse} exact/>
           <Route path="/asLevel" component={asLevel} exact/>
           <Route path="/aLevel" component={aLevel} exact/>
+          <Route path="/login" component={login} exact/>
           </Switch>
       <Footer/>  
       </div>

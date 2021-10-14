@@ -11,46 +11,49 @@ function NavBar() {
     <div>
 
 
-    <nav className="  navbar navbar-expand-lg navbar-light">
-  <img className="logo" src='./resources/logo3.png'/>
+    <nav className="navbar navbar-expand-lg navbar-light">
+  
    
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class=" centerContentNav navbar-collapse" id="">
+  <img className="logo" src='./resources/logo.png'/>
     <ul class="navbar-nav ">
     <Link className="nav-link" to="/homePage">
-      <li class="fontNav nav-item active addPadding">
+      <li class="fontNav nav-item active navBarStyling">
          HOME
       </li>
       </Link>
       <Link className="nav-link" to="/gcse">
-      <li class="fontNav nav-item active addPadding">
+      <li class="fontNav nav-item active navBarStyling">
          GCSE
       </li>
       </Link>
       <Link className="nav-link" to="/igcse">
-      <li class="fontNav nav-item active">
+      <li class="fontNav nav-item active navBarStyling">
          IGCSE
       </li>
       </Link>
       <Link className="nav-link" to="/asLevel">
-      <li class="fontNav nav-item active">
-         AS-LEVEL
+      <li class="fontNav nav-item active navBarStyling">
+         AS
       </li>
       </Link>
       <Link className="nav-link" to="/aLevel">
-      <li class="fontNav nav-item active">
+      <li class="fontNav nav-item active navBarStyling">
          A-LEVEL
       </li>
-      </Link>        
+      </Link>   
+      <Link className="nav-link" to="/login">
+      <li class="fontNav nav-item active navBarStyling">
+     LOGIN
+      </li>
+      </Link>     
       </ul>
       
-      <span class="fontNav navbar-text">
-      Login/Sign Up
-    </span>
-    
+      
     
   </div>
  
