@@ -7,8 +7,8 @@ import {
   MainBody3,
   MainBody4,
 } from "../components/cards.js";
-import ALevelsCard from "../images/animated2.png";
-import GCSECard from "../images/animated3.png";
+import ALevelsCard from "../images/animated4.png";
+import GCSECard from "../images/animated5.png";
 import "./homePage.css";
 
 function homePage() {
@@ -26,11 +26,19 @@ function homePage() {
         />
         <MainBody2
           title="Testimonials "
-          subText="Using the decodeMaths website is helping our pupils to improve their final scores, and they are enjoying the rapid feedback of the automatic marking. It motivates the less able and offers real challenge to the high-flyers. 
-
-Shelley Squadratics, Headteacher at Pi Squared Secondary School
-"
+          subText={
+            <p>
+              {" "}
+              "Using the decodeMaths website is helping our pupils to improve
+              their final scores, and they are enjoying the rapid feedback of
+              the automatic marking. It motivates the less able and offers real
+              challenge to the high-flyers. <br />
+              <br /> Shelley Squadratics, Headteacher at Pi Squared Secondary
+              School"{" "}
+            </p>
+          }
         />
+
         <MainBody4
           imageSrc={ALevelsCard}
           title="A-Levels "
