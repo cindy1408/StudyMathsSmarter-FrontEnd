@@ -1,13 +1,11 @@
 import React from 'react';
 import QuestionList from '../components/QuestionList';
-
 class QuestionContainer extends React.Component {
     constructor(props){
         super(props);
         this.state = {
             loaded: false, 
-            questions: [], 
-            questionNum: 0
+            questions: [],
         }
         this.nextQuestion = this.nextQuestion.bind(this);
     }
@@ -24,10 +22,10 @@ class QuestionContainer extends React.Component {
     }
 
     render(){
+
         return(
             <div>
-                <h3>This is the question container</h3>
-                <QuestionList questions={this.state.questions} number={this.state.questionNum} nextQuestion = {this.nextQuestion}/>
+                <QuestionList questions={this.state.questions} />
             </div>
         )
     }

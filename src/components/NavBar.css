@@ -1,3 +1,37 @@
+/* .navbar, 
+.navbar-nav, 
+#navbarNav 
+ {
+  display: flex; 
+  flex-direction: row;
+  height: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.navbar-nav li {
+  margin: 0 1em;
+  list-style: none;
+  font-family: 'Noto Serif', serif;
+  font-weight: lighter;
+  color:#15616d;
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbarNav p {
+  width: 55px;
+  position: relative;
+  text-align: center;
+  border: solid yellow 1px;
+  background-color: yellow;
+  top: -70px; 
+  left: 140px;
+  border-radius: 20%;
+} */
 .navBarAlign > ul {
   text-align: center;
 }
@@ -10,6 +44,25 @@
   flex-direction: row;
   justify-content: center;
 }
+<<<<<<< HEAD
+=======
+@media (max-width: 1000px) {
+  .navbar {
+    background: white;
+    height: fit-content;
+    border-bottom: 3px solid #78290f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .centerContentNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85%;
+  }
+}
+>>>>>>> b43c461649c6619908f44f795093f6b4334ca351
 .centerContentNav {
   display: flex;
   flex-direction: row;
