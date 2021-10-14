@@ -1,28 +1,27 @@
 // import { logDOM } from "@testing-library/react";
 import React from "react";
-import Logo from '../images/FR_English.png';
+import {Banner, MainBody,MainBody2,MainBody3,} from "../components/cards.js";
+import Logo from '../images/logo3.png';
+import GCSEMath from '../images/gcseMathPaper.png';
+import Smile from '../images/logo3.png';
 import "./homePage.css";
-import NavBar from "./NavBar.js";
-import Footer from "./Footer";
 
 function homePage(){
     return (
-       <div className="homepage">
-       <NavBar />
-      {/* <Banner title="This is the home page" subText="Yes still home page"/> */}
-            <div className="aboutPage">
-                  <div>
-                        <img id="homepageImage" src={Logo} />
-                  </div>
-                  <div>
-                        <p>"Check back frequently for the latest COVID-19 travel and specific testing requirements for your destination, including any stops for connecting flights. You are required to come to the airport with the appropriate travel documents.'</p> 
-                  </div>  
-            </div> 
-            <div className='footer'>
-                  <Footer />  
-            </div>
-      </div>
+       <>
+      <Banner title="Interactive maths learning for all students" subText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat orci, vehicula id suscipit in, scelerisque sed sapien. In vulputate euismod justo, id sagittis sem pellentesque sed. Aliquam in quam"/>
+      <div className="homePage">
+            <MainBody imageSrc={GCSEMath} title="GCSE " subText="Check back frequently for the latest COVID-19 travel and specific testing requirements for your destination, including any stops for connecting flights. You are required to come to the airport with the appropriate travel documents.'"/>
+            {/* <MainBody2 imageSrc={Smile} title="Testimonials " subText="SO FUN IH IH"/>
+            <MainBody imageSrc={Logo} title="A-Levels " subText="Check back frequently for the latest COVID-19 travel and specific testing requirements for your destination, including any stops for connecting flights. You are required to come to the airport with the appropriate travel documents.'"/>
+            <MainBody3 imageSrc={Logo} title="Ready to study maths smarter? " subText="Try our Quiz"/> */}
+          
+            
+      <div className="homePage"></div>
+</div>
+
       
+      </>
 )
 }
 export default homePage;

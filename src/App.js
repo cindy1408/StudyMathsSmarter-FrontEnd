@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import QuestionContainer from './containers/QuestionContainer';
 import Results from './components/Results';
 import ComingSoon from './components/ComingSoon';
@@ -9,10 +9,14 @@ import Login from './components/Login'
 import AuthenticatedRoute from './components/AuthenticatedRoute'
 import ProfileContainer from './containers/ProfileContainer'
 import homePage from './components/homePage';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
+      <Router>
+      <NavBar/>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/homepage" component={homePage} />
@@ -23,6 +27,8 @@ function App() {
         <AuthenticatedRoute path="/profile" exact component={ProfileContainer} />
         <Route component={Error} />
       </Switch>
+      <Footer/>
+      </Router>
     </div>
   );
 }

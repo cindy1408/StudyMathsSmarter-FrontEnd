@@ -86,7 +86,7 @@ export default function Results(props){
                 </div> 
             </div>     
             <button className='tryAgain' onClick={() => handleClick()}>Try again</button> 
-            <button className='homePage' onClick={() => goHome()} >Home Page</button>  
+            <button className='homePageButtonResults' onClick={() => goHome()} >Home Page</button>  
         </div>
         <Footer />
         </div>

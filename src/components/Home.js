@@ -4,8 +4,6 @@ import { useDispatch } from 'react-redux';
 import { startQuiz } from '../redux/startQuizSlice';
 import { addTimeStamp } from '../redux/updateQuizSlice';
 import './Home.css';
-import Footer from './Footer';
-import NavBar from './NavBar';
 
 export default function Home(props) {
     const history = useHistory();
@@ -19,11 +17,11 @@ export default function Home(props) {
     return (
         <div className="home-bg">
         <div className="homepage">
-            <NavBar />
+            
             <img className="logo" src='./resources/logo3.png' />
             <button className="homepageBtn" onClick={() => handleClick()}>Start Assessment!</button>
         </div>
-        <Footer />
+    
         </div>
     )
 }
