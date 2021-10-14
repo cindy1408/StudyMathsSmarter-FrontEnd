@@ -39,7 +39,7 @@ export default function NavBar(){
 
     <Link className="nav-link" to="/comingSoon">
       <li >
-         Login/Sign Up
+         Login
       </li>
       </Link>     
       </ul>
