@@ -1,14 +1,5 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-<<<<<<< HEAD
-import NavBar from './components/NavBar.js';
-import gcse from './pages/gcse';
-import igcse from './pages/igcse';
-import asLevel from './pages/asLevel';
-import aLevel from './pages/aLevel';
-import homePage from './pages/homePage';
-import login from './pages/login';
-=======
 import QuestionContainer from './containers/QuestionContainer';
 import Results from './components/Results';
 import ComingSoon from './components/ComingSoon';
@@ -19,7 +10,6 @@ import AuthenticatedRoute from './components/AuthenticatedRoute'
 import ProfileContainer from './containers/ProfileContainer'
 import homePage from './components/homePage';
 import NavBar from './components/NavBar';
->>>>>>> b43c461649c6619908f44f795093f6b4334ca351
 import Footer from './components/Footer';
 
 function App() {
@@ -27,20 +17,6 @@ function App() {
     <div className="App">
       <Router>
       <NavBar/>
-<<<<<<< HEAD
-        <Switch>
-          <Route path="/" component={homePage} exact/>
-          <Route path="/homePage" component={homePage} exact/>
-          <Route path="/gcse" component={gcse} exact/>
-          <Route path="/igcse" component={igcse} exact/>
-          <Route path="/asLevel" component={asLevel} exact/>
-          <Route path="/aLevel" component={aLevel} exact/>
-          <Route path="/login" component={login} exact/>
-          </Switch>
-      <Footer/>  
-      </div>
-    </Router>
-=======
       <Switch>
       <Route exact path="/" exact component={homePage} />
         <Route exact path="/homepage" exact component={homePage} />
@@ -54,7 +30,6 @@ function App() {
       </Switch>
       <Footer/>
       </Router>
->>>>>>> b43c461649c6619908f44f795093f6b4334ca351
     </div>
   );
 }

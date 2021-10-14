@@ -44,8 +44,6 @@ a {
   flex-direction: row;
   justify-content: center;
 }
-<<<<<<< HEAD
-=======
 @media (max-width: 1000px) {
   .navbar {
     background: white;
@@ -62,7 +60,6 @@ a {
     height: 85%;
   }
 }
->>>>>>> b43c461649c6619908f44f795093f6b4334ca351
 .centerContentNav {
   display: flex;
   flex-direction: row;
