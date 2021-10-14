@@ -29,9 +29,10 @@
 }
 
 .mainBody {
-  height: 400px;
-  width: 650px;
+  height: 300px;
+  width: 85%;
   display: flex;
+
   box-shadow: 0 2px 4px 0 #ffecd1;
   transition: 0.3s;
   border-radius: 0px;
@@ -40,16 +41,15 @@
   margin-bottom: 2.5rem;
 }
 /* @media is to make the rendering of an element responsive to the resizing of the page itself */
-@media (min-width: 500px) {
+@media (max-width: 1000px) {
   .mainBody {
     height: 300px;
-    width: 65%;
+    width: 800px;
     display: flex;
-
-    box-shadow: 0 2px 4px 0 #ffecd1(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 #ffecd1;
     transition: 0.3s;
     border-radius: 0px;
-    background-color: #ffecd18c;
+    background-color: #ffecd1;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
   }
@@ -58,7 +58,7 @@
 
 .mainBody2 {
   height: 200px;
-  width: 945px;
+  width: 65%;
   display: flex;
 
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -68,10 +68,10 @@
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
-@media (min-width: 1500px) {
+@media (max-width: 1000px) {
   .mainBody2 {
     height: 200px;
-    width: 65%;
+    width: 945px;
     display: flex;
 
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
