@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import { useDispatch } from "react-redux";
 import { startQuiz } from "../redux/startQuizSlice";
 import { addTimeStamp } from "../redux/updateQuizSlice";
-import Cat from "../images/animated4.png";
+import AssessmentGcse from "../images/animated4.png";
 import "./GCSEAssessment.css";
 
 function AssessmentPic(props) {
@@ -21,7 +21,7 @@ export default function GCSEAssessment(props) {
   }
   return (
     <div className="home-bg">
-      <AssessmentPic imageSrc={Cat} />
+      {/* <AssessmentPic imageSrc={AssessmentGcse} /> */}
       <button className="homepageBtn" onClick={() => handleClick()}>
         Start Assessment!
       </button>

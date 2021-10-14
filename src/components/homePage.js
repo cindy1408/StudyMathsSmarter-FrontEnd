@@ -7,8 +7,8 @@ import {
   MainBody3,
   MainBody4,
 } from "../components/cards.js";
-import ALevelsCard from "../images/animated4.png";
-import GCSECard from "../images/animated5.png";
+import ALevelsCard from "../images/animated3.png";
+import GCSECard from "../images/animated8.png";
 import "./homePage.css";
 
 function homePage() {
@@ -26,19 +26,10 @@ function homePage() {
         />
         <MainBody2
           title="Testimonials "
-          subText={
-            <p>
-              {" "}
-              "Using the decodeMaths website is helping our pupils to improve
-              their final scores, and they are enjoying the rapid feedback of
-              the automatic marking. It motivates the less able and offers real
-              challenge to the high-flyers. <br />
-              <br /> Shelley Squadratics, Headteacher at Pi Squared Secondary
-              School"{" "}
-            </p>
-          }
+          subText="decodeMaths has very helpful resource, for all students. You get variety of questions that let you understand the concept easily."
+          subText2="Shelley Squadratics, Headteacher at Pi Squared Secondary
+              School"
         />
-
         <MainBody4
           imageSrc={ALevelsCard}
           title="A-Levels "

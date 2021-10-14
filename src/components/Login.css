@@ -18,6 +18,8 @@
   width: 10% !important;
   position: relative;
   margin: 2rem;
+  font-size: 30px;
+  border-radius: 10px;
 }
 
 .login-container {
@@ -99,8 +101,22 @@ button:focus {
 }
 
 button.ghost {
-  background-color: transparent;
+  margin-top: 20px;
+  background-color: white;
   border-color: #ffffff;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: "Arial", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+button.ghost2 {
+  margin-top: 20px;
+  background-color: #15616d4b;
+  border-color: #15616d;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: "Arial", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 form {

@@ -37,9 +37,9 @@ function MainBody2(props) {
     <div className="mainBody2">
       {/* <img className="mainBodyImage2" src={props.imageSrc}/> */}
       <div className="mainBodyContent">
-        <h1 className="mainBodyTitle">{props.title}</h1>
+        <h1 className="mainBodyTitle2">{props.title}</h1>
         <h3 className="mainBodySubText">{props.subText}</h3>
-        <h3 className="mainBodySubText">{props.subText2}</h3>
+        <h4 className="mainBodySubText2">{props.subText2}</h4>
       </div>
     </div>
   );
