@@ -40,6 +40,12 @@ h2 {
     animation: glowingTryAgain 1300ms infinite;
 }
 
+.homePage {
+  width: 200px;
+  background-color:#ff7d00;
+  /* animation: glowingHomePage 1300ms infinite; */
+}
+
 @keyframes glowingTryAgain {
     0% {
       background-color: #78290f;
@@ -54,3 +60,18 @@ h2 {
       box-shadow: 0 0 3px #e88666;
     }
   }
+
+  /* @keyframes glowingHomePage {
+    0% {
+      background-color: #ff7d00;
+      box-shadow: 0 0 3px #f7e2cf;
+    }
+    50% {
+      background-color: #fadabd;
+      box-shadow: 0 0 10px #fe8d24;
+    }
+    100% {
+      background-color: #ff7d00;
+      box-shadow: 0 0 3px #f7e2cf;
+    }
+  } */
