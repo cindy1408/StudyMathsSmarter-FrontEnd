@@ -1,5 +1,6 @@
 import './cards.css';
 import React from 'react';
+import {useHistory} from "react-router";
 
 function Banner (props){
     return(
@@ -47,12 +48,20 @@ function MainBody2 (props){
     )
 }
 
+
+
 function MainBody3 (props){
+    const history=useHistory();
+    function RedirectGcse (){
+    // alert("I am working")
+   
+        history.push("/GCSEStart")
+    }
     return(
         <div className="mainBody3">
             <div className="mainBodyContent3">
             <h1 className="mainBodyTitle3">{props.title}</h1>
-            <button class="startButton"  ><span>Start </span></button>
+            <button class="startButton" onClick={()=>RedirectGcse()} ><span>Start </span></button>
             </div>
         </div>
         
