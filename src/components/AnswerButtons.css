@@ -1,22 +1,22 @@
 .answer-button-bg {
-    background-color: rgb(255, 236, 209);
+  background-color: rgb(255, 236, 209);
 }
-button {
-    width: 80px; 
-    height: 50px; 
-    background-color: #15616d; 
-    color:rgb(255, 236, 209);
-    margin: 1em;
-    font-size: 30px;
-    border: 3px solid #78290f;   
+.buttonAnswers {
+  width: 80px;
+  height: 50px;
+  background-color: #15616d;
+  color: rgb(255, 236, 209);
+  margin: 1em;
+  font-size: 30px;
+  border: 3px solid #78290f;
 }
 
 .raise:hover,
 .raise:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.30em);
+  transform: translateY(-0.3em);
   color: #ff7d00;
-  border:#15616d 3px solid; 
+  border: #15616d 3px solid;
   font-weight: bold;
   animation: glowing 1300ms infinite;
 }

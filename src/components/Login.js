@@ -44,7 +44,7 @@ const Login = (props) => {
   
     return(
         <div className="login-background">
-        <button onClick={() => history.push("/")} className="login-home-button"> {"<"}</button>
+        <button onClick={() => history.push("/")} className="login-home-button"> {"Home"}</button>
             <div className="login-container">
             <form className="form-container sign-in-form">
             <h1 className="login-heading">Login</h1>
@@ -62,7 +62,7 @@ const Login = (props) => {
                 </div>
                 <a className="forgot-password" href="#">Forgot your password?</a>
                
-                <button type="button"  onClick={loginClicked}>Login</button>
+                <button type="buttonLogin"  onClick={loginClicked}>Login</button>
                 </form>
     
                 <div className="overlay-container">

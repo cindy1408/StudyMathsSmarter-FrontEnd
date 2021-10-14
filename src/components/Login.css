@@ -14,8 +14,8 @@
 }
 
 .login-home-button {
-  background: #ff7d00;;
-  width: 2% !important;
+  background: #ff7d00;
+  width: 10% !important;
   position: relative;
   margin: 2rem;
 }
@@ -77,7 +77,7 @@ input {
   background: #fff;
 }
 
-button {
+.buttonLogin {
   border-radius: 20px;
   font-size: 12px;
   font-weight: bold;

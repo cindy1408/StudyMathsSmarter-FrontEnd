@@ -72,22 +72,22 @@ const AnswerButtons = (props) => {
 
     return(
         <div className="answer-button-bg">
-            <button 
+            <button className="buttonAnswers" 
                 className="raise" 
                 value={"a"} 
                 onClick={()=> postUserResponse("a")}>A
             </button>
-            <button 
+            <button className="buttonAnswers" 
                 className="raise" 
                 value={"b"} 
                 onClick={()=> postUserResponse("b")}>B
             </button>
-            <button 
+            <button className="buttonAnswers" 
                 className="raise" 
                 value={"c"} 
                 onClick={()=> postUserResponse("c")}>C
             </button>
-            <button 
+            <button className="buttonAnswers" 
                 className="raise" 
                 value={"d"} 
                 onClick={()=> postUserResponse("d")}>D

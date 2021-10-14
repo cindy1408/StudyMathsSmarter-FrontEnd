@@ -15,7 +15,7 @@ const QuestionList = (props) => {
     return(
         <div>
             {questionList[questionNum]}
-            <Footer />
+            
         </div>
     )
 }
