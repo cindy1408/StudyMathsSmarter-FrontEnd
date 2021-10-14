@@ -17,7 +17,7 @@ export default function Home(props) {
         history.push('/questions')
     }
     return (
-        <div>
+        <div className="home-bg">
         <div className="homepage">
             <NavBar />
             <img className="logo" src='./resources/logo3.png' />

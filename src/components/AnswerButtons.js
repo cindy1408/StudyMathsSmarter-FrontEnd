@@ -71,7 +71,7 @@ const AnswerButtons = (props) => {
     }
 
     return(
-        <div>
+        <div className="answer-button-bg">
             <button 
                 className="raise" 
                 value={"a"} 

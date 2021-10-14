@@ -5,6 +5,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import './Login.css'
 import {useDispatch} from 'react-redux'
 import {getUserFromDB} from '../redux/getUserSlice'
+import NavBar from './NavBar'
 
 const Login = (props) => {
     const history = useHistory();
@@ -43,9 +44,10 @@ const Login = (props) => {
   
     return(
         <div className="login-background">
+        <button onClick={() => history.push("/")} className="login-home-button"> Home</button>
             <div className="login-container">
             <form className="form-container sign-in-form">
-            <h1>Login</h1>
+            <h1 className="login-heading">Login</h1>
             <div class="social-container">
 				<a href="#" ><i className="fa fa-facebook-f"></i></a>
 				<a href="#" ><i className="fa fa-google"></i></a>
@@ -58,7 +60,7 @@ const Login = (props) => {
                 {hasLoginFailed && <div>Invalid email or password</div>}
                 {showSuccessMessage && <div>Login Sucessful</div>}
                 </div>
-                <a href="#">Forgot your password?</a>
+                <a className="forgot-password" href="#">Forgot your password?</a>
                
                 <button type="button"  onClick={loginClicked}>Login</button>
                 </form>

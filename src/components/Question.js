@@ -15,7 +15,8 @@ const Question = (props) => {
             break; 
     }
     return(
-        <div className='question' id={props.id}>
+        <div className="question-bg">
+               <div className='question' id={props.id}>
             <h2>GCSE Assessment</h2>
             <h3>Question: {props.id + 1} - {topic} - Level: {JSON.stringify(props.question.level)} </h3>
             <div className='questionImage'>
@@ -24,6 +25,7 @@ const Question = (props) => {
 
             <AnswerButtons id={props.id} resource={props.question.resource}/>
 
+        </div>
         </div>
     )
 }
