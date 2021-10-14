@@ -1,0 +1,34 @@
+.navbar, 
+.navbar-nav, 
+#navbarNav 
+ {
+  display: flex; 
+  flex-direction: row;
+  height: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.navbar-nav li {
+  margin: 0 1em;
+  list-style: none;
+  font-family: 'Noto Serif', serif;
+  font-weight: lighter;
+  color:#15616d;
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbarNav p {
+  width: 55px;
+  position: relative;
+  text-align: center;
+  border: solid yellow 1px;
+  background-color: yellow;
+  top: -70px; 
+  left: 140px;
+  border-radius: 20%;
+}

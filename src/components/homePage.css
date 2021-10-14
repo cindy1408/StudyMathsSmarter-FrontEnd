@@ -1,0 +1,22 @@
+.aboutPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#homepageImage{
+  width: 35em;
+  height: auto; 
+}
+
+.homepage {
+  margin: 2em 7em 7em;
+}
+
+.aboutPage p {
+margin: 0 5%;
+}
+
+.footer {
+  width: 100%;
+  }

@@ -1,15 +1,18 @@
 import { configureStore } from '@reduxjs/toolkit';
 import questionReducer from './questionSlice';
-import getQuizIdReducer from './getQuizSlice';
+import startQuizReducer from './startQuizSlice';
 import updateQuizReducer from './updateQuizSlice';
 import getUserSlice from './getUserSlice';
+import questionsReducer from './getQuestionSlice';
+import quizReducer from './getQuizSlice';
 
 export default configureStore({
 	reducer: {
         questions: questionReducer,
-        // quizResult: getQuizIdReducer,
-        quizId: getQuizIdReducer,
+        quizResult: startQuizReducer,
         quizResult: updateQuizReducer,
-        user: getUserSlice
+        user: getUserSlice,
+        questionDb: questionsReducer, 
+        quizDb: quizReducer
     },
 });

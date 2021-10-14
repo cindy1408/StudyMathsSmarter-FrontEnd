@@ -1,0 +1,20 @@
+.weakness {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-family: 'Noto Serif', serif;
+}
+
+.weaknessResources{
+    line-height: 45px;
+    padding-left: 10px;
+}
+.weaknessInformation {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -3,7 +3,6 @@ import QuestionList from '../components/QuestionList';
 class QuizContainer extends React.Component{
     constructor(props) {
         super(props);
-
         this.state = {
             loaded: false,
             userId: 0,
@@ -18,11 +17,9 @@ class QuizContainer extends React.Component{
             }
         }
     }
-
     componentDidMount(){
         this.getQuizData();
     }
-
     getQuizData(){
         fetch("http://localhost:8081/study_maths_smarter/quiz/start")
         .then(response => response.json())
@@ -34,7 +31,7 @@ class QuizContainer extends React.Component{
     render(){
         return(
             <>
-            <QuestionList questions={this.state.quiz} />
+            <div>{this.state.quiz.map(question => <img src={`data:image/png;base64,${question.questionImage}`} />)}</div>
             </>
         )
     }

@@ -5,10 +5,11 @@ import { nextQuestion } from '../redux/questionSlice';
 import { useSelector } from 'react-redux';
 import { addG1Score, addG2Score, addG3Score, addS1Score, addS2Score, addS3Score,addT1Score, addT2Score, addT3Score } from '../redux/updateQuizSlice';
 
-const AnswerButtons = () => {
+const AnswerButtons = (props) => {
     const dispatch = useDispatch();
     const history = useHistory();
     let questionNum = useSelector(state => state.questions.questionNum);
+
 
     function postUserResponse(value){
         switch(questionNum){
@@ -71,10 +72,26 @@ const AnswerButtons = () => {
 
     return(
         <div>
-            <button value={"a"} onClick={()=> postUserResponse("a")}>A</button>
-            <button value={"b"} onClick={()=> postUserResponse("b")}>B</button>
-            <button value={"c"} onClick={()=> postUserResponse("c")}>C</button>
-            <button value={"d"} onClick={()=> postUserResponse("d")}>D</button>
+            <button 
+                className="raise" 
+                value={"a"} 
+                onClick={()=> postUserResponse("a")}>A
+            </button>
+            <button 
+                className="raise" 
+                value={"b"} 
+                onClick={()=> postUserResponse("b")}>B
+            </button>
+            <button 
+                className="raise" 
+                value={"c"} 
+                onClick={()=> postUserResponse("c")}>C
+            </button>
+            <button 
+                className="raise" 
+                value={"d"} 
+                onClick={()=> postUserResponse("d")}>D
+            </button>
         </div>
     )
 }
