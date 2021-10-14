@@ -1,14 +1,14 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux"
 
+
 //Grabs the last quiz id (use for updating quiz score AND incase user wants to sign up)
 export const getLastQuizId = createAsyncThunk(
     'quizId/getQuizId', 
-    async () => {
-        const response = await fetch("http://localhost:8080/study_maths_smarter/quiz")
-        const data = response.json();
-        const lastQuizId = data[data.length-1].id;
-        return lastQuizId;
+    async (dispatch, getState) => {
+        return await fetch("http://localhost:8080/study_maths_smarter/quiz")
+        .then((res) => res.json())
+        .then(res =>res[res.length - 1].id);
     }
 );
 

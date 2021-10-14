@@ -13,6 +13,6 @@ export default configureStore({
         quizResult: updateQuizReducer,
         user: getUserSlice,
         questionDb: questionsReducer, 
-        quizDb: quizReducer
+        quizId: quizReducer
     },
 });
