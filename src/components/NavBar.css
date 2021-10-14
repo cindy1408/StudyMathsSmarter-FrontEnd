@@ -44,6 +44,22 @@ a {
   flex-direction: row;
   justify-content: center;
 }
+@media (max-width: 1000px) {
+  .navbar {
+    background: white;
+    height: fit-content;
+    border-bottom: 3px solid #78290f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .centerContentNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85%;
+  }
+}
 .centerContentNav {
   display: flex;
   flex-direction: row;

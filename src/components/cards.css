@@ -59,8 +59,8 @@
 /* @media is to make the rendering of an element responsive to the resizing of the page itself */
 @media (max-width: 1000px) {
   .mainBody {
-    height: 300px;
-    width: 800px;
+    height: fit-content;
+    width: fit-content;
     display: flex;
     box-shadow: 0 2px 4px 0 #ffecd1;
     transition: 0.3s;
@@ -86,8 +86,8 @@
 }
 @media (max-width: 1000px) {
   .mainBody2 {
-    height: 200px;
-    width: 800px;
+    height: fit-content;
+    width: fit-content;
     display: flex;
 
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);

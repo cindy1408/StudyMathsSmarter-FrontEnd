@@ -16,11 +16,11 @@ export default function GCSEAssessment(props) {
     }
     return (
         <div className="home-bg">
-        <div className="homepage">
+        
             
-            <img className="logo" src='./resources/logo3.png' />
+            {/* <img className="logo" src='./resources/logo3.png' /> */}
             <button className="homepageBtn" onClick={() => handleClick()}>Start Assessment!</button>
-        </div>
+        
     
         </div>
     )
