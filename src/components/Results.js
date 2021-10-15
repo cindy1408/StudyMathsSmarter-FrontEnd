@@ -41,7 +41,7 @@ export default function Results(props){
     let weakness = [];
 
     if(geometeryScore <= 2){
-        weakness.push("Geometery")
+        weakness.push("Geometry")
     }
     if(solvingEquationScore <= 2){
         weakness.push("Solving Equation")
