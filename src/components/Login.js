@@ -5,7 +5,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import './Login.css'
 import {useDispatch} from 'react-redux'
 import {getUserFromDB} from '../redux/getUserSlice'
-import NavBar from './NavBar'
 
 const Login = (props) => {
     const history = useHistory();
@@ -31,7 +30,7 @@ const Login = (props) => {
        .executeAuthenticationService(username, password)
        .then(()=>{
            dispatch(getUserFromDB({username: username, password: password}))
-           history.push("/profile");
+           .then(()=>{ history.push("/profile")})
        }).catch(()=>{
            setShowSuccessMessage(false);
            setHasLoginFailed(true);

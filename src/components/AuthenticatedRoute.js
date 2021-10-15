@@ -6,7 +6,7 @@ import {useSelector} from 'react-redux'
 function AuthenticatedRoute(props) {
     const userId = useSelector(state => state.user.id);
     return(
-        (userId == 0) ? <Redirect to="/login" /> :<Route {...props} /> 
+        (userId==0) ? <Redirect to="/login" /> :<Route {...props} /> 
     )  
     }
 

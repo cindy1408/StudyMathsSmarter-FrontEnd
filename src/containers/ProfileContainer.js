@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-
+import Profile from '../components/Profile'
 
 class ProfileContainer extends React.Component {
     constructor(props) {
@@ -23,7 +23,8 @@ class ProfileContainer extends React.Component {
     render() {
         return (
             <>
-           { this.state.user.map((user)=><div>{user.email}</div>)}
+           {/* { this.state.user.map((user)=><div>{user.email}</div>)} */}
+           <Profile />
             </>
         )
     }

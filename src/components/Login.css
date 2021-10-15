@@ -179,6 +179,7 @@ form {
 
 .social-container {
   margin: 20px 0;
+  background: #fff;
 }
 
 .social-container a {
@@ -190,8 +191,4 @@ form {
   margin: 0 5px;
   height: 40px;
   width: 40px;
-}
-
-.social-container {
-  background: #fff;
 }
