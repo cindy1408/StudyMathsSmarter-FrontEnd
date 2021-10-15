@@ -21,7 +21,7 @@ export default function Weakness(props) {
       return null;
     }
     for (let i = 0; i < props.topics.length; i++) {
-      if (props.topics[i] == "Geometery") {
+      if (props.topics[i] == "Geometry") {
         requiredResources.push(resource[3].props.children);
       } else if (props.topics[i] == "Solving Equation") {
         requiredResources.push(resource[0].props.children);

@@ -5,7 +5,7 @@
 .imgQuestion {
   max-width: auto;
   height: 95%;
-  border: solid 2px black;
+  /* border: solid 2px black; */
 }
 
 .question {

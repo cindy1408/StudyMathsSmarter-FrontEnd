@@ -28,7 +28,7 @@ export default function Results(props) {
   let strength = [];
 
   if (geometeryScore == 3) {
-    strength.push("Geometery");
+    strength.push("Geometry");
   }
   if (solvingEquationScore == 3) {
     strength.push("Solving Equation");
@@ -40,7 +40,7 @@ export default function Results(props) {
   let weakness = [];
 
   if (geometeryScore <= 2) {
-    weakness.push("Geometery");
+    weakness.push("Geometry");
   }
   if (solvingEquationScore <= 2) {
     weakness.push("Solving Equation");
@@ -60,9 +60,8 @@ export default function Results(props) {
   }
 
   function goHome() {
-    // dispatch(startQuiz());
     dispatch(resetQuestion());
-    // dispatch(addTimeStamp());
+
     history.push("/");
   }
 
@@ -80,7 +79,7 @@ export default function Results(props) {
             <h3>Strength: </h3>
             <h3>
               {strength.map((eachTopic) => {
-                return <h4 className="strength">{eachTopic}</h4>;
+                return <h4>{eachTopic}</h4>;
               })}
             </h3>
           </div>
