@@ -5,6 +5,7 @@ import { startQuiz } from "../redux/startQuizSlice";
 import { addTimeStamp } from "../redux/updateQuizSlice";
 import AssessmentGcse from "../images/animated4.png";
 import "./GCSEAssessment.css";
+import { resetQuestion } from "../redux/questionSlice";
 
 function AssessmentPic(props) {
   return <img className="mainBodyImage" src={props.imageSrc} />;
@@ -15,6 +16,7 @@ export default function GCSEAssessment(props) {
   const dispatch = useDispatch();
 
   function handleClick() {
+    dispatch(resetQuestion());
     dispatch(startQuiz());
     dispatch(addTimeStamp());
     history.push("/questions");
