@@ -1,77 +1,75 @@
 .strengthAndWeakness {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: center;
-    background-color: #15616d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .strength {
-    margin: 0 2%;
-    border: solid 5px #ff7d00;; 
-    width: 25%;
-    border-radius: 5px;
-    font-family: 'Noto Serif', serif;
+  margin: 0 2%;
+  border: solid 5px rgb(238, 197, 139);
+  width: 25%;
+  border-radius: 5px;
+  font-family: "Arial", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: #15616d;
+  color: rgb(255, 236, 209);
 }
 
 .resultSection {
-    margin: 5%;
-    margin-bottom: 2%;
-    padding: 2% 5% 5%;
-    border: solid 8px #78290f;
-    background-color: #15616d;
+  margin: 5%;
+  margin-bottom: 2%;
+  padding: 2% 5% 5%;
+  border: solid 8px #78290f;
+  background-color: #15616d6c;
 }
 
-.resultScore h3, 
+.resultScore h3,
 h2 {
-    background-color: #15616d;
-    color: #ffecd1;
-    font-family: 'Noto Serif', serif;
-    font-weight: bold;
+  color: #15616d;
+  font-family: "Arial", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
 }
 
 .improve {
-    border-radius: 5px;
-    border: 5px solid #ff7d00;
+  border-radius: 5px;
+  border: 5px solid rgb(238, 197, 139);
 }
 
 .tryAgain {
-    width: 200px;
-    background-color:#78290f;
-    animation: glowingTryAgain 1300ms infinite;
+  width: 200px;
+  height: 50px;
+  background-color: #78290f;
+  animation: glowingTryAgain 1300ms infinite;
+  font-size: 30px;
+  font-family: "Arial", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
-.homePage {
+.homePageButtonResults {
   width: 200px;
-  background-color:#ff7d00;
-  /* animation: glowingHomePage 1300ms infinite; */
+  height: 50px;
+  background-color: rgb(255, 236, 209);
+  animation: glowingHomePage 1300ms infinite;
+  margin-left: 50px;
+  font-size: 30px;
+  font-family: "Arial", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 @keyframes glowingTryAgain {
-    0% {
-      background-color: #78290f;
-      box-shadow: 0 0 3px #e89579;
-    }
-    50% {
-      background-color: #15616d;
-      box-shadow: 0 0 10px #32a3b5;
-    }
-    100% {
-      background-color: #78290f;
-      box-shadow: 0 0 3px #e88666;
-    }
+  0% {
+    background-color: rgb(255, 236, 209);
+    box-shadow: 0 0 3px #e89579;
   }
-
-  /* @keyframes glowingHomePage {
-    0% {
-      background-color: #ff7d00;
-      box-shadow: 0 0 3px #f7e2cf;
-    }
-    50% {
-      background-color: #fadabd;
-      box-shadow: 0 0 10px #fe8d24;
-    }
-    100% {
-      background-color: #ff7d00;
-      box-shadow: 0 0 3px #f7e2cf;
-    }
-  } */
+  50% {
+    background-color: #15616d38;
+    box-shadow: 0 0 10px #32a3b5;
+  }
+  100% {
+    background-color: rgb(255, 236, 209);
+    box-shadow: 0 0 3px #e88666;
+  }
+}

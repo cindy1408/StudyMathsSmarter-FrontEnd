@@ -1,28 +1,49 @@
 // import { logDOM } from "@testing-library/react";
 import React from "react";
-import Logo from '../images/FR_English.png';
+import {
+  Banner,
+  MainBody,
+  MainBody2,
+  MainBody3,
+  MainBody4,
+} from "../components/cards.js";
+import ALevelsCard from "../images/animated3.png";
+import GCSECard from "../images/animated8.png";
 import "./homePage.css";
-import NavBar from "./NavBar.js";
-import Footer from "./Footer";
 
-function homePage(){
-    return (
-       <div className="homepage">
-       <NavBar />
-      {/* <Banner title="This is the home page" subText="Yes still home page"/> */}
-            <div className="aboutPage">
-                  <div>
-                        <img id="homepageImage" src={Logo} />
-                  </div>
-                  <div>
-                        <p>"Check back frequently for the latest COVID-19 travel and specific testing requirements for your destination, including any stops for connecting flights. You are required to come to the airport with the appropriate travel documents.'</p> 
-                  </div>  
-            </div> 
-            <div className='footer'>
-                  <Footer />  
-            </div>
+function homePage() {
+  return (
+    <>
+      <Banner
+        title="Interactive maths learning for all students"
+        subText="Providing complete curriculum coverage from GCSE to A Level, decodeMaths offers quizzes, revision packs, along with a wealth of resources that will help you develop your confidence and fluency in maths."
+      />
+      <div className="homePage">
+        <MainBody
+          imageSrc={GCSECard}
+          title="GCSE "
+          subText="Our GCSE section includes a quiz which is a great tool for revising for any upcoming exams. The decodeMaths revision packs are designed to help students self-serve their independent learning. Packs include a curated set of revision lessons, homework tasks, and online worksheets that offer targeted revision in the run up to exams."
+        />
+        <MainBody2
+          title="Testimonials "
+          subText="decodeMaths has very helpful resource, for all students. You get variety of questions that let you understand the concept easily."
+          subText2="Shelley Squadratics, Headteacher at Pi Squared Secondary
+              School"
+        />
+        <MainBody4
+          imageSrc={ALevelsCard}
+          title="A-Levels "
+          subText="Our A-Level section includes a quiz which is a great tool for revising for any upcoming AS/A-Level mocks or exams. The decodeMaths revision packs are designed to help students self-serve their independent learning. Packs include a curated set of revision lessons, homework tasks, and online worksheets that offer targeted revision in the run up to exams.
+"
+        />
+        <MainBody3
+          title="Ready to study maths smarter? "
+          subText="Try our Quiz"
+        />
+
+        <div className="homePage"></div>
       </div>
-      
-)
+    </>
+  );
 }
 export default homePage;

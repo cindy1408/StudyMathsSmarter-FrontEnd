@@ -1,54 +1,39 @@
 import React from "react";
 import "./NavBar.css";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function NavBar(){
+function NavBar() {
   return (
-    <div className = 'navbar'>
-        <nav>
-        <div id="navbarNav">
-        <ul class="navbar-nav">
-    <Link className="nav-link" to="/homepage">
-      <li >
-         HOME
-      </li>
-      </Link>
-      <Link className="nav-link" to="/">
-      <li>
-         GCSE
-      </li>
-      </Link>
-      <Link className="nav-link" to="/comingSoon">
-      <li>
-         IGCSE
-      </li>
-      <p>coming soon!</p>
-      </Link>
-      <Link className="nav-link" to="/comingSoon">
-      <li >
-         AS-LEVEL
-      </li>
-      <p>coming soon!</p>
-      </Link>
-      <Link className="nav-link" to="/comingSoon">
-      <li >
-         A-LEVEL
-      </li>
-      <p>coming soon!</p>
-      </Link>     
-
-    <Link className="nav-link" to="/login">
-      <li >
-         Login/Register
-      </li>
-      </Link >     
-      </ul>
-
-    
-    
-  </div>
- 
-</nav>
-</div>
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <div class=" centerContentNav navbar-collapse" id="">
+          <img className="logo" src="./resources/logo.png" />
+          <ul class="navbar-nav ">
+            <Link className="nav-link" to="/homePage">
+              <li class="fontNav nav-item active navBarStyling">HOME</li>
+            </Link>
+            <Link className="nav-link" to="/GCSEStart">
+              <li class="fontNav nav-item active navBarStyling">GCSE</li>
+            </Link>
+            <Link className="nav-link" to="/comingSoon">
+              <li class="fontNav nav-item active navBarStyling">IGCSE</li>
+            </Link>
+            <Link className="nav-link" to="/comingSoon">
+              <li class="fontNav nav-item active navBarStyling">AS</li>
+            </Link>
+            <Link className="nav-link" to="/comingSoon">
+              <li class="fontNav nav-item active navBarStyling">A-LEVEL</li>
+            </Link>
+            <Link className="nav-link" to="/login">
+              <li class="fontNav nav-item active navBarStyling">LOGIN</li>
+            </Link>
+          </ul>
+        </div>
+      </nav>
+      {/*<p>I am always here</p>*/}
+    </div>
   );
-  }
+}
+
+export default NavBar;
