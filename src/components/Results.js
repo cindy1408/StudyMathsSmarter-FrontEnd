@@ -29,7 +29,7 @@ export default function Results(props){
     let strength = []; 
 
     if(geometeryScore == 3){
-        strength.push("Geometery")
+        strength.push("Geometry")
     }
     if(solvingEquationScore == 3){
         strength.push("Solving Equation")
@@ -61,9 +61,7 @@ export default function Results(props){
     }
 
     function goHome(){
-        // dispatch(startQuiz());
         dispatch(resetQuestion());
-        // dispatch(addTimeStamp());
         history.push('/')
     }
 
