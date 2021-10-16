@@ -1,0 +1,202 @@
+.banner {
+  background-color: rgb(255, 236, 209);
+  height: 20%;
+  text-align: left;
+  padding-left: 10%;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  padding-right: 10%;
+}
+
+.bannerContent {
+  width: 55%;
+  word-wrap: break-word;
+}
+
+@media (max-width: 1500px) {
+  .bannerContent {
+    width: 80%;
+    word-wrap: break-word;
+  }
+  .banner {
+    background-color: rgb(255, 236, 209);
+    height: 20%;
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    padding-right: 10%;
+  }
+}
+
+.bannerTitle {
+  font-size: 25px;
+  color: #15616d;
+}
+.bannerSubText {
+  font-size: 20px;
+  color: #15616da4;
+}
+
+.bannerGcse {
+  background-color: #78290f3f;
+  height: 75px;
+  text-align: 10px 150px 10px 200px;
+}
+
+.mainBody {
+  height: 300px;
+  width: 85%;
+  display: flex;
+
+  box-shadow: 0 2px 4px 0 #ffecd1;
+  transition: 0.3s;
+  border-radius: 0px;
+  background-color: #ffecd1;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+/* @media is to make the rendering of an element responsive to the resizing of the page itself */
+@media (max-width: 1000px) {
+  .mainBody {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    box-shadow: 0 2px 4px 0 #ffecd1;
+    transition: 0.3s;
+    border-radius: 0px;
+    background-color: #ffecd1;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* below for the second card */
+
+.mainBody2 {
+  height: 200px;
+  width: 85%;
+  display: flex;
+
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 0px;
+  background-color: #15616d49;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+@media (max-width: 1000px) {
+  .mainBody2 {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 0px;
+    background-color: #15616d49;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.mainBodyImage {
+  height: 100%;
+  width: 400px;
+}
+.mainBodyImage2 {
+  height: 100%;
+  width: 300px;
+}
+
+.mainBodyContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.mainBodyTitle {
+  font-size: 30px;
+  padding-top: 1.5rem;
+  color: #15616d;
+  margin-bottom: 35px;
+}
+.mainBodyTitle2 {
+  font-size: 30px;
+  padding-top: 1.5rem;
+  color: #15616d;
+  margin-bottom: 15px;
+}
+.mainBodySubText {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.712);
+}
+.mainBodySubText2 {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.712);
+}
+
+.mainBody3 {
+  height: 100px;
+  width: 400px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 0px;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.mainBodyContent3 {
+  text-align: center;
+}
+
+.mainBodyTitle3 {
+  text-align: center;
+  font-size: 25px;
+  color: #15616d;
+}
+
+.startButton {
+  display: relative;
+  border-radius: 4px;
+  /* background-color: rgba(68, 33, 192, 0.2); */
+  background-color: #ff7d00;
+  border: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 3px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.mainBody4 {
+  height: 300px;
+  width: 85%;
+  display: flex;
+  flex-direction: row-reverse;
+  box-shadow: 0 2px 4px 0 #ffecd1;
+  transition: 0.3s;
+  border-radius: 0px;
+  background-color: #ffecd1;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+/* @media is to make the rendering of an element responsive to the resizing of the page itself */
+@media (max-width: 1000px) {
+  .mainBody4 {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 0 2px 4px 0 #ffecd1;
+    transition: 0.3s;
+    border-radius: 0px;
+    background-color: #ffecd1;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}

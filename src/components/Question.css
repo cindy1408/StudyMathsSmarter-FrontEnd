@@ -1,35 +1,35 @@
 .question-bg {
-    background-color: rgb(255, 236, 209);
+  background-color: rgb(255, 236, 209);
 }
 
-img {
-    max-width: auto;
-    height: 90%;
-    /* border: solid 2px black; */
+.imgQuestion {
+  max-width: auto;
+  height: 95%;
+  /* border: solid 2px black; */
 }
 
 .question {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-    font-family: 'Noto Serif', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Serif", serif;
 }
 .questionImage {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2em; 
-    border-radius: 25%;
-    width: 90vh;
-    height: 40vh;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  border-radius: 25%;
+  width: 90vh;
+  height: 40vh;
+  background-color: white;
 }
 
 .question h2 {
-    background-color:rgb(255, 236, 209); 
-    color: black;
-    font-size: 2em;
-    font-family: 'Noto Serif', serif;
+  background-color: rgb(255, 236, 209);
+  color: black;
+  font-size: 2em;
+  font-family: "Noto Serif", serif;
 }

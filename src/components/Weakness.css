@@ -1,20 +1,29 @@
 .weakness {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-    border-radius: 5px;
-    font-family: 'Noto Serif', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  font-family: "Arial", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: #15616d;
+  color: rgb(255, 236, 209);
 }
 
-.weaknessResources{
-    line-height: 45px;
-    padding-left: 10px;
+.weaknessResources {
+  line-height: 45px;
+  padding-left: 10px;
+  text-decoration: none;
 }
 .weaknessInformation {
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.removeBlueUnderline {
+  text-decoration: none;
+  color: rgb(238, 197, 139);
 }
